@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+                Data Viz
+        </title>
+        <style type="text/css">
+        #viz {
+            width: 900px;
+            height: 700px;
+        }
+        </style>
+        <script src="https://cdn.neo4jlabs.com/neovis.js/v1.0.0/neovis.js"></script>
+    </head>
+    <script>
+        function draw()
+        {
+            var config = {
+                container_id : "viz",
+                server_url : "bolt://54.165.85.15:32994",
+                server_user : "neo4j",
+                server_password : "executives-survivals-stocks",
+                labels : {
+
+                },
+                relationships : {
+
+                },
+                initial_cypher : "MATCH p=(:Troll)-[:RETWEETS]->(:Troll) RETURN p"
+            }
+
+            var viz = new NeoVis.default(config);
+        }
+    </script>
+    <body onload="draw()">
+        <div id="viz"></div>
+    </body>
+</html>
