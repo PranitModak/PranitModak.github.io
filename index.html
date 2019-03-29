@@ -55,23 +55,6 @@
   <script src="plugins/sigma.parsers.gexf/gexf-parser.js"></script>
   <script src="plugins/sigma.parsers.gexf/sigma.parsers.gexf.js"></script>
   
-  <script>
-  /**
-   * Here is just a basic example on how to properly display a graph
-   * exported from Gephi in the GEXF format.
-   *
-   * The plugin sigma.parsers.gexf can load and parse the GEXF graph file,
-   * and instantiate sigma when the graph is received.
-   *
-   * The object given as the second parameter is the base of the instance
-   * configuration object. The plugin will just add the "graph" key to it
-   * before the instanciation.
-   */
-  sigma.parsers.gexf('Viz.gexf', {
-    container: 'graph-container'
-  });
-  </script>
-  
     </head>
     <body>
       <div id="container">
@@ -86,6 +69,21 @@
         </style>
         <div id="graph-container"></div>
       </div>
-
+      <script>
+        /**
+         * Here is just a basic example on how to properly display a graph
+         * exported from Gephi in the GEXF format.
+         *
+         * The plugin sigma.parsers.gexf can load and parse the GEXF graph file,
+         * and instantiate sigma when the graph is received.
+         *
+         * The object given as the second parameter is the base of the instance
+         * configuration object. The plugin will just add the "graph" key to it
+         * before the instanciation.
+         */
+        sigma.parsers.gexf('Viz.gexf', {
+          container: 'graph-container'
+        });
+        </script>
     </body>
 </html>
