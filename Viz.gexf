@@ -147,7 +147,7 @@
         <viz:color r="252" g="73" b="32"></viz:color>
       </node>
       <node id="My Journey" label="My Journey">
-        <viz:size value="145.6"></viz:size>
+        <viz:size value="296.40002"></viz:size>
         <viz:position x="147.37013" y="-24.8573"></viz:position>
         <viz:color r="252" g="99" b="74"></viz:color>
       </node>
