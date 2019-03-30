@@ -1,10 +1,15 @@
 <html>
-    <head>
-        <title>Vix</title>
-        <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+
+<head>
+  <title>Vix</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <script src="src/sigma.core.js"></script>
   <script src="src/conrad.js"></script>
   <script src="src/utils/sigma.utils.js"></script>
@@ -54,36 +59,30 @@
   <!-- END SIGMA IMPORTS -->
   <script src="plugins/sigma.parsers.gexf/gexf-parser.js"></script>
   <script src="plugins/sigma.parsers.gexf/sigma.parsers.gexf.js"></script>
-  
-    </head>
-    <body>
-      <div id="container">
-        <style>
-          #graph-container {
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            position: absolute;
-          }
-        </style>
-        <div id="graph-container"></div>
-      </div>
-      <script>
-        /**
-         * Here is just a basic example on how to properly display a graph
-         * exported from Gephi in the GEXF format.
-         *
-         * The plugin sigma.parsers.gexf can load and parse the GEXF graph file,
-         * and instantiate sigma when the graph is received.
-         *
-         * The object given as the second parameter is the base of the instance
-         * configuration object. The plugin will just add the "graph" key to it
-         * before the instanciation.
-         */
-        sigma.parsers.gexf('Viz.gexf', {
-          container: 'graph-container'
-        });
-        </script>
-    </body>
+
+</head>
+
+<body>
+  <div id="intro" class="well">
+    <img src="Heart.gif" alt="AI" height="100%" width="100%">
+  </div>
+  <div id="container" class="container well well-sm" style="background-color:rgb(7, 33, 58)">
+    <style>
+      #graph-container {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+      }
+    </style>
+    <div id="graph-container"></div>
+  </div>
+  <script>
+    sigma.parsers.gexf('Viz.gexf', {
+      container: 'graph-container'
+    });
+  </script>
+</body>
+
 </html>
