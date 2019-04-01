@@ -66,17 +66,120 @@
 </head>
 
 <body class="grad">
-  <div id="intro" class="well grad">
-    <img src="Heart.gif" alt="AI" height="100%" width="100%">
+  <div id="intro" class="grad" style="height : 100%; width : 100%">
+    <div id="particles-js"></div>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS.load('particles-js', 'particles.json', function(){
+        console.log('particles.json loaded...');
+      });
+    </script>
+    <div id="messenger"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+    <script id="rendered-js">
+      var Messenger = function(el){
+    'use strict';
+    var m = this;
+    
+    m.init = function(){
+      m.codeletters = "&#*+%?£@§$";
+      m.message = 0;
+      m.current_length = 0;
+      m.fadeBuffer = false;
+      m.messages = [
+        'This is a message, which can be long and all.',
+        'This could be another message.',
+        'Also short ones work!',
+        'Cool.'
+      ];
+      
+      setTimeout(m.animateIn, 100);
+    };
+    
+    m.generateRandomString = function(length){
+      var random_text = '';
+      while(random_text.length < length){
+        random_text += m.codeletters.charAt(Math.floor(Math.random()*m.codeletters.length));
+      } 
+      
+      return random_text;
+    };
+    
+    m.animateIn = function(){
+      if(m.current_length < m.messages[m.message].length){
+        m.current_length = m.current_length + 2;
+        if(m.current_length > m.messages[m.message].length) {
+          m.current_length = m.messages[m.message].length;
+        }
+        
+        var message = m.generateRandomString(m.current_length);
+        $(el).html(message);
+        
+        setTimeout(m.animateIn, 20);
+      } else { 
+        setTimeout(m.animateFadeBuffer, 20);
+      }
+    };
+    
+    m.animateFadeBuffer = function(){
+      if(m.fadeBuffer === false){
+        m.fadeBuffer = [];
+        for(var i = 0; i < m.messages[m.message].length; i++){
+          m.fadeBuffer.push({c: (Math.floor(Math.random()*12))+1, l: m.messages[m.message].charAt(i)});
+        }
+      }
+      
+      var do_cycles = false;
+      var message = ''; 
+      
+      for(var i = 0; i < m.fadeBuffer.length; i++){
+        var fader = m.fadeBuffer[i];
+        if(fader.c > 0){
+          do_cycles = true;
+          fader.c--;
+          message += m.codeletters.charAt(Math.floor(Math.random()*m.codeletters.length));
+        } else {
+          message += fader.l;
+        }
+      }
+      
+      $(el).html(message);
+      
+      if(do_cycles === true){
+        setTimeout(m.animateFadeBuffer, 50);
+      } else {
+        setTimeout(m.cycleText, 2000);
+      }
+    };
+    
+    m.cycleText = function(){
+      m.message = m.message + 1;
+      if(m.message >= m.messages.length){
+        m.message = 0;
+      }
+      
+      m.current_length = 0;
+      m.fadeBuffer = false;
+      $(el).html('');
+      
+      setTimeout(m.animateIn, 200);
+    };
+    
+    m.init();
+}
+  
+console.clear();
+var messenger = new Messenger($('#messenger'));
+    </script>
   </div>
-  <div id="container" class="well grad" style="height:600px;" >
+  <div id="container" class="grad" style="height:600px;" >
   </div>
   <script>
     sigma.parsers.gexf('Viz.gexf', {
       container: 'container'
     });
   </script>
-  <div id="location" class="well grad" style="height: 600px; overflow: hidden;">
+  <div id="location" class="grad" style="height: 600px; overflow: hidden;">
     <video width="100%" height="100%" autoplay src="Locate.mp4"></video>
   </div>
 </body>
