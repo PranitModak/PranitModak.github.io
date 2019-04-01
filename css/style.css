@@ -5,6 +5,32 @@
   background-image: linear-gradient(to bottom, rgb(32, 31, 31), black);
 }
 
+#location {
+  position:relative;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+#video {
+  position:absolute;
+  z-index:1;
+  bottom: 190px;
+  right: 130px;
+  width: 540px;
+  height: 310px;
+}
+
+#video_overlays {
+  position:absolute;
+  z-index:5;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  bottom: 0px;
+  right: 0px;
+}
+
 #messenger {
   position: absolute;
   top: 50%;
@@ -16,6 +42,10 @@
   font-size: 20px;
   white-space: nowrap;
   text-shadow: 0 2px 2px rgba(#000, 0.9);
+}
+
+#container {
+  overflow: hidden;
 }
 
 #particles-js{ 
