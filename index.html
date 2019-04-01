@@ -90,7 +90,7 @@
         "Hi! I 'm Pranit Modak.",
         'I am a Developer.',
         'Interested in AI,',
-        'NET Fullstack development.'
+        'and NET Fullstack development.'
       ];
       
       setTimeout(m.animateIn, 100);
@@ -172,7 +172,7 @@ console.clear();
 var messenger = new Messenger($('#messenger'));
     </script>
   </div>
-  <div class="grad" style="height:600px;" >
+  <div class="grad" style="height:600px; padding : 100px;" >
     <div id="container" class="container well well-sm" style="height: 400px; width: 600px; padding : 0px;"></div>
   </div>
   <script>
@@ -181,7 +181,12 @@ var messenger = new Messenger($('#messenger'));
     });
   </script>
   <div id="location" class="grad1" style="height: 600px; overflow: hidden;">
-    <video width="100%" height="100%" autoplay src="Locate.mp4"></video>
+    <div id="video_overlays">
+      <img src="TV.gif" id="TV">
+    </div>
+    <div id="video">
+      <video autoplay width="100%" height="100%" src="Locate.mp4"></video>
+    </div>
   </div>
 </body>
 
