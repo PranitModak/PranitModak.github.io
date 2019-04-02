@@ -221,11 +221,7 @@
     };
     var options = {
       nodes: {
-        shape: 'circularImage',
-        image: {
-          unselected: 'no.png',
-          selected: nodes.title+'.png'
-        },
+        shape: 'dot',
         scaling: {
           min: 10,
           max: 30
@@ -247,13 +243,12 @@
         barnesHut: {
           gravitationalConstant: -80000,
           springConstant: 0.001,
-          springLength: 220
+          springLength: 200
         }
       },
       interaction: {
         tooltipDelay: 200,
-        hideEdgesOnDrag: false,
-        hover:true
+        hideEdgesOnDrag: false
       }
     };
 
