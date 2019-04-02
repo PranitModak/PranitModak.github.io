@@ -221,7 +221,11 @@
     };
     var options = {
       nodes: {
-        shape: 'dot',
+        shape: 'circularImage',
+        image: {
+          unselected: 'no.png',
+          selected: nodes.title+'.png'
+        },
         scaling: {
           min: 10,
           max: 30

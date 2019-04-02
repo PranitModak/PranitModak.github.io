@@ -6,6 +6,10 @@ var nodes = [
       id: "OS Controls and programming",
       attributes: {},
       color: "rgb(212,70,80)",
+      image: {
+        unselected: 'no.png',
+        selected: title+'.png',
+      },
       size: 100
   },
   {
