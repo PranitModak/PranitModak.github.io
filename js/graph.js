@@ -1,6 +1,6 @@
 var nodes = [
   {
-      label: "OS Controls and programming",
+      title: "OS Controls and programming",
       x: 268.99176025390625,
       y: 118.98257446289062,
       id: "OS Controls and programming",
@@ -9,7 +9,7 @@ var nodes = [
       size: 100
   },
   {
-      label: "JavaFX",
+      title: "JavaFX",
       x: -129.76284790039062,
       y: -10.618583679199219,
       id: "JavaFX",
@@ -18,7 +18,7 @@ var nodes = [
       size: 150
   },
   {
-      label: "Python",
+      title: "Python",
       x: -222.93991088867188,
       y: -151.78065490722656,
       id: "Python",
@@ -27,7 +27,7 @@ var nodes = [
       size: 150
   },
   {
-      label: "Linux",
+      title: "Linux",
       x: 272.12933349609375,
       y: 146.56207275390625,
       id: "Linux",
@@ -36,7 +36,7 @@ var nodes = [
       size: 150
   },
   {
-      label: "WCF",
+      title: "WCF",
       x: 16.222190856933594,
       y: -271.4733581542969,
       id: "WCF",
@@ -45,7 +45,7 @@ var nodes = [
       size: 100
   },
   {
-      label: "SQL",
+      title: "SQL",
       x: 292.4627990722656,
       y: 186.58538818359375,
       id: "SQL",
@@ -54,7 +54,7 @@ var nodes = [
       size: 150
   },
   {
-      label: "MVC",
+      title: "MVC",
       x: 165.84292602539062,
       y: -233.95199584960938,
       id: "MVC",
@@ -63,7 +63,7 @@ var nodes = [
       size: 100
   },
   {
-      label: "CTS Training",
+      title: "CTS Training",
       x: -219.5642852783203,
       y: 91.38565063476562,
       id: "CTS Training",
@@ -72,7 +72,7 @@ var nodes = [
       size: 250
   },
   {
-      label: "ASP.NET(ASPX)",
+      title: "ASP.NET(ASPX)",
       x: 121.93632507324219,
       y: -284.20703125,
       id: "ASP.NET(ASPX)",
@@ -81,7 +81,7 @@ var nodes = [
       size: 100
   },
   {
-      label: "OS functionality",
+      title: "OS functionality",
       x: 275.2920227050781,
       y: -80.05095672607422,
       id: "OS functionality",
@@ -90,7 +90,7 @@ var nodes = [
       size: 100
   },
   {
-      label: "Web API",
+      title: "Web API",
       x: 173.0591278076172,
       y: -261.7071838378906,
       id: "Web API",
@@ -99,7 +99,7 @@ var nodes = [
       size: 100
   },
   {
-      label: "DialogFlow",
+      title: "DialogFlow",
       x: -299.1231384277344,
       y: 136.7296905517578,
       id: "DialogFlow",
@@ -108,7 +108,7 @@ var nodes = [
       size: 100
   },
   {
-      label: "12th",
+      title: "12th",
       x: 244.24961853027344,
       y: 189.24072265625,
       id: "12th",
@@ -117,7 +117,7 @@ var nodes = [
       size: 250
   },
   {
-      label: "Intel gathering \u0026 Reconnaissance",
+      title: "Intel gathering \u0026 Reconnaissance",
       x: 259.4354248046875,
       y: -125.77915954589844,
       id: "Intel gathering \u0026 Reconnaissance",
@@ -126,7 +126,7 @@ var nodes = [
       size: 100
   },
   {
-      label: "Deep Learning",
+      title: "Deep Learning",
       x: -271.70672607421875,
       y: -2.7605316638946533,
       id: "Deep Learning",
@@ -135,7 +135,7 @@ var nodes = [
       size: 150
   },
   {
-      label: "Core",
+      title: "Core",
       x: 310.1607666015625,
       y: -64.38958740234375,
       id: "Core",
@@ -144,7 +144,7 @@ var nodes = [
       size: 100
   },
   {
-      label: "Password Cracking",
+      title: "Password Cracking",
       x: 109.8983383178711,
       y: -80.37898254394531,
       id: "Password Cracking",
@@ -153,7 +153,7 @@ var nodes = [
       size: 100
   },
   {
-      label: "TensorFlow",
+      title: "TensorFlow",
       x: -217.15817260742188,
       y: -64.06535339355469,
       id: "TensorFlow",
@@ -162,7 +162,7 @@ var nodes = [
       size: 100
   },
   {
-      label: "NLTK",
+      title: "NLTK",
       x: -274.8916320800781,
       y: -56.249549865722656,
       id: "NLTK",
@@ -171,7 +171,7 @@ var nodes = [
       size: 100
   },
   {
-      label: ".NET Fullstack",
+      title: ".NET Fullstack",
       x: 84.20539855957031,
       y: -254.8087158203125,
       id: ".NET Fullstack",
@@ -180,7 +180,7 @@ var nodes = [
       size: 150
   },
   {
-      label: "ADO.NET Entity Framework",
+      title: "ADO.NET Entity Framework",
       x: -37.824371337890625,
       y: -187.7559814453125,
       id: "ADO.NET Entity Framework",
@@ -189,7 +189,7 @@ var nodes = [
       size: 100
   },
   {
-      label: "My Journey",
+      title: "My Journey",
       x: 16.734291076660156,
       y: 97.81822204589844,
       id: "My Journey",
@@ -198,7 +198,7 @@ var nodes = [
       size: 350
   },
   {
-      label: "Kernel",
+      title: "Kernel",
       x: 311.8190612792969,
       y: 146.72457885742188,
       id: "Kernel",
@@ -207,7 +207,7 @@ var nodes = [
       size: 100
   },
   {
-      label: ".NET WinApps",
+      title: ".NET WinApps",
       x: 190.0669403076172,
       y: 206.10842895507812,
       id: ".NET WinApps",
@@ -216,7 +216,7 @@ var nodes = [
       size: 100
   },
   {
-      label: "Arduino",
+      title: "Arduino",
       x: -268.5978698730469,
       y: -188.6834259033203,
       id: "Arduino",
@@ -225,7 +225,7 @@ var nodes = [
       size: 100
   },
   {
-      label: "Visual Basic",
+      title: "Visual Basic",
       x: 355.2738952636719,
       y: -14.751371383666992,
       id: "Visual Basic",
@@ -234,7 +234,7 @@ var nodes = [
       size: 150
   },
   {
-      label: "Payload Deployment",
+      title: "Payload Deployment",
       x: 166.248779296875,
       y: -57.21375274658203,
       id: "Payload Deployment",
@@ -243,7 +243,7 @@ var nodes = [
       size: 100
   },
   {
-      label: "Keras",
+      title: "Keras",
       x: -258.4105224609375,
       y: -121.51273345947266,
       id: "Keras",
@@ -252,7 +252,7 @@ var nodes = [
       size: 100
   },
   {
-      label: "10th",
+      title: "10th",
       x: 329.86981201171875,
       y: 14.02120590209961,
       id: "10th",
@@ -261,7 +261,7 @@ var nodes = [
       size: 250
   },
   {
-      label: "Conversational AI",
+      title: "Conversational AI",
       x: -279.9905700683594,
       y: 114.86892700195312,
       id: "Conversational AI",
@@ -270,7 +270,7 @@ var nodes = [
       size: 150
   },
   {
-      label: "Web Hacking",
+      title: "Web Hacking",
       x: 135.15362548828125,
       y: -149.4415283203125,
       id: "Web Hacking",
@@ -279,7 +279,7 @@ var nodes = [
       size: 100
   },
   {
-      label: "Java",
+      title: "Java",
       x: 288.6929931640625,
       y: -45.457977294921875,
       id: "Java",
@@ -288,7 +288,7 @@ var nodes = [
       size: 150
   },
   {
-      label: "Ethical Hacking",
+      title: "Ethical Hacking",
       x: 150.66348266601562,
       y: -112.12391662597656,
       id: "Ethical Hacking",
@@ -297,7 +297,7 @@ var nodes = [
       size: 150
   },
   {
-      label: "WinForms",
+      title: "WinForms",
       x: 25.22411346435547,
       y: -300.263427734375,
       id: "WinForms",
@@ -306,7 +306,7 @@ var nodes = [
       size: 100
   },
   {
-      label: "NLP",
+      title: "NLP",
       x: -291.9384460449219,
       y: -72.11940002441406,
       id: "NLP",
@@ -315,7 +315,7 @@ var nodes = [
       size: 100
   },
   {
-      label: "Reinforced Learning",
+      title: "Reinforced Learning",
       x: -220.56285095214844,
       y: 178.92056274414062,
       id: "Reinforced Learning",
@@ -324,7 +324,7 @@ var nodes = [
       size: 150
   },
   {
-      label: "WPF",
+      title: "WPF",
       x: 54.71540069580078,
       y: -177.79708862304688,
       id: "WPF",
@@ -333,7 +333,7 @@ var nodes = [
       size: 100
   },
   {
-      label: "IOT",
+      title: "IOT",
       x: -201.95416259765625,
       y: -188.63702392578125,
       id: "IOT",
@@ -342,7 +342,7 @@ var nodes = [
       size: 100
   },
   {
-      label: "Metro UI (FrontEnd)",
+      title: "Metro UI (FrontEnd)",
       x: -141.49908447265625,
       y: 17.318164825439453,
       id: "Metro UI (FrontEnd)",
@@ -351,7 +351,7 @@ var nodes = [
       size: 100
   },
   {
-      label: "Node.js",
+      title: "Node.js",
       x: -282.1750793457031,
       y: 35.25505065917969,
       id: "Node.js",
@@ -360,7 +360,7 @@ var nodes = [
       size: 150
   },
   {
-      label: "Android SDK",
+      title: "Android SDK",
       x: -47.35886764526367,
       y: -98.7823486328125,
       id: "Android SDK",
@@ -369,7 +369,7 @@ var nodes = [
       size: 150
   },
   {
-      label: "HTML",
+      title: "HTML",
       x: 348.2104797363281,
       y: 88.82583618164062,
       id: "HTML",
@@ -378,7 +378,7 @@ var nodes = [
       size: 150
   },
   {
-      label: "C",
+      title: "C",
       x: 310.35418701171875,
       y: 55.41274642944336,
       id: "C",
@@ -387,7 +387,7 @@ var nodes = [
       size: 150
   },
   {
-      label: "Augmented Reality App development",
+      title: "Augmented Reality App development",
       x: -7.9358906745910645,
       y: -65.34901428222656,
       id: "Augmented Reality App development",
@@ -396,7 +396,7 @@ var nodes = [
       size: 100
   },
   {
-      label: "Wireless AirCrack",
+      title: "Wireless AirCrack",
       x: 185.81124877929688,
       y: -173.0416717529297,
       id: "Wireless AirCrack",
@@ -405,7 +405,7 @@ var nodes = [
       size: 100
   },
   {
-      label: "Bootstrap",
+      title: "Bootstrap",
       x: -167.931884765625,
       y: -257.3128967285156,
       id: "Bootstrap",
@@ -414,7 +414,7 @@ var nodes = [
       size: 150
   },
   {
-      label: "Windows Applications",
+      title: "Windows Applications",
       x: 376.202392578125,
       y: -38.846981048583984,
       id: "Windows Applications",
@@ -423,7 +423,7 @@ var nodes = [
       size: 100
   },
   {
-      label: "B.Tech",
+      title: "B.Tech",
       x: -126.23676300048828,
       y: -139.6367950439453,
       id: "B.Tech",
@@ -432,7 +432,7 @@ var nodes = [
       size: 250
   },
   {
-      label: "Jquery",
+      title: "Jquery",
       x: -69.12704467773438,
       y: -242.2721405029297,
       id: "Jquery",
@@ -441,7 +441,7 @@ var nodes = [
       size: 150
   },
   {
-      label: "Machine Learning",
+      title: "Machine Learning",
       x: -216.70025634765625,
       y: -97.47032165527344,
       id: "Machine Learning",
@@ -450,7 +450,7 @@ var nodes = [
       size: 150
   },
   {
-      label: "Ordroid",
+      title: "Ordroid",
       x: -258.23028564453125,
       y: -220.95985412597656,
       id: "Ordroid",
@@ -459,7 +459,7 @@ var nodes = [
       size: 100
   },
   {
-      label: "PL/SQL",
+      title: "PL/SQL",
       x: -186.85133361816406,
       y: -30.645099639892578,
       id: "PL/SQL",
@@ -468,7 +468,7 @@ var nodes = [
       size: 150
   },
   {
-      label: "Lex",
+      title: "Lex",
       x: -306.5347595214844,
       y: 97.92945861816406,
       id: "Lex",
@@ -477,7 +477,7 @@ var nodes = [
       size: 100
   },
   {
-      label: "Javascript",
+      title: "Javascript",
       x: 233.37901306152344,
       y: 240.6636199951172,
       id: "Javascript",
@@ -486,7 +486,7 @@ var nodes = [
       size: 150
   },
   {
-      label: "Naming and Casing Standards",
+      title: "Naming and Casing Standards",
       x: 143.52499389648438,
       y: -208.29867553710938,
       id: "Naming and Casing Standards",
@@ -495,7 +495,7 @@ var nodes = [
       size: 100
   },
   {
-      label: "Data Structure",
+      title: "Data Structure",
       x: 280.53594970703125,
       y: 82.54444122314453,
       id: "Data Structure",
@@ -504,7 +504,7 @@ var nodes = [
       size: 100
   },
   {
-      label: "Vulnerability Analysis",
+      title: "Vulnerability Analysis",
       x: 68.67411804199219,
       y: -119.67503356933594,
       id: "Vulnerability Analysis",
@@ -513,7 +513,7 @@ var nodes = [
       size: 100
   },
   {
-      label: "Shell Scripting",
+      title: "Shell Scripting",
       x: 279.00872802734375,
       y: 226.16317749023438,
       id: "Shell Scripting",
@@ -522,7 +522,7 @@ var nodes = [
       size: 100
   },
   {
-      label: "Penetration Testing",
+      title: "Penetration Testing",
       x: 210.68458557128906,
       y: -90.22171020507812,
       id: "Penetration Testing",
@@ -531,7 +531,7 @@ var nodes = [
       size: 100
   },
   {
-      label: "CSS",
+      title: "CSS",
       x: 391.6133728027344,
       y: 37.55874252319336,
       id: "CSS",
@@ -540,7 +540,7 @@ var nodes = [
       size: 150
   },
   {
-      label: "Raspberry PI",
+      title: "Raspberry PI",
       x: -193.25543212890625,
       y: -209.98179626464844,
       id: "Raspberry PI",
@@ -549,7 +549,7 @@ var nodes = [
       size: 100
   },
   {
-      label: "Basic",
+      title: "Basic",
       x: 310.4793701171875,
       y: 85.18933868408203,
       id: "Basic",
@@ -558,7 +558,7 @@ var nodes = [
       size: 100
   },
   {
-      label: "Unit Testing",
+      title: "Unit Testing",
       x: -10.65802001953125,
       y: -229.23239135742188,
       id: "Unit Testing",
