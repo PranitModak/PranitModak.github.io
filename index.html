@@ -4,7 +4,7 @@
   <title>Pranit Modak</title>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  
+
   <link rel="stylesheet" href="css/style.css">
 
   <!-- jQuery library -->
@@ -62,6 +62,7 @@
   <script src="plugins/sigma.parsers.gexf/gexf-parser.js"></script>
   <script src="plugins/sigma.parsers.gexf/sigma.parsers.gexf.js"></script>
   <script src="js/script.js"></script>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'>
 
 </head>
 
@@ -70,110 +71,122 @@
     <div id="particles-js"></div>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
-      particlesJS.load('particles-js', 'particles.json', function(){
+      particlesJS.load('particles-js', 'particles.json', function () {
         console.log('particles.json loaded...');
       });
     </script>
-    <div id="messenger"></div>
+    <div class="pic"><img src="MyPic.png" width="400" height="700"></div>
+    <div id="messenger0"></div>
+    <div id="messenger1"></div>
+    <div id="messenger2"></div>
+    <div id="messenger3"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
     <script id="rendered-js">
-      var Messenger = function(el){
-    'use strict';
-    var m = this;
-    
-    m.init = function(){
-      m.codeletters = "&#*+%?£@§$";
-      m.message = 0;
-      m.current_length = 0;
-      m.fadeBuffer = false;
-      m.messages = [
-        "Hi! I 'm Pranit Modak.",
+      var Messenger = function (el, text) {
+        'use strict';
+        var m = this;
+
+        m.init = function () {
+          m.codeletters = "&#*+%?£@§$";
+          m.message = 0;
+          m.current_length = 0;
+          m.fadeBuffer = false;
+          m.messages = [text];
+
+          setTimeout(m.animateIn, 100);
+        };
+
+        m.generateRandomString = function (length) {
+          var random_text = '';
+          while (random_text.length < length) {
+            random_text += m.codeletters.charAt(Math.floor(Math.random() * m.codeletters.length));
+          }
+
+          return random_text;
+        };
+
+        m.animateIn = function () {
+          if (m.current_length < m.messages[m.message].length) {
+            m.current_length = m.current_length + 2;
+            if (m.current_length > m.messages[m.message].length) {
+              m.current_length = m.messages[m.message].length;
+            }
+
+            var message = m.generateRandomString(m.current_length);
+            $(el).html(message);
+
+            setTimeout(m.animateIn, 20);
+          } else {
+            setTimeout(m.animateFadeBuffer, 20);
+          }
+        };
+
+        m.animateFadeBuffer = function () {
+          if (m.fadeBuffer === false) {
+            m.fadeBuffer = [];
+            for (var i = 0; i < m.messages[m.message].length; i++) {
+              m.fadeBuffer.push({ c: (Math.floor(Math.random() * 12)) + 1, l: m.messages[m.message].charAt(i) });
+            }
+          }
+
+          var do_cycles = false;
+          var message = '';
+
+          for (var i = 0; i < m.fadeBuffer.length; i++) {
+            var fader = m.fadeBuffer[i];
+            if (fader.c > 0) {
+              do_cycles = true;
+              fader.c--;
+              message += m.codeletters.charAt(Math.floor(Math.random() * m.codeletters.length));
+            } else {
+              message += fader.l;
+            }
+          }
+
+          $(el).html(message);
+          if (do_cycles === true) {
+            setTimeout(m.animateFadeBuffer, 50);
+          } else {
+            //setTimeout(m.cycleText, 2000);
+          }
+        };
+
+        m.cycleText = function () {
+          m.message = m.message + 1;
+          if (m.message >= m.messages.length) {
+            m.message = 0;
+          }
+          m.current_length = 0;
+          m.fadeBuffer = false;
+
+          setTimeout(m.animateIn, 200);
+        };
+
+        m.init();
+      }
+
+      console.clear();
+      var messenger;
+      var total = ["Hi! I 'm Pranit Modak.",
         'I am a Developer.',
         'Interested in AI,',
-        'and NET Fullstack development.'
-      ];
-      
-      setTimeout(m.animateIn, 100);
-    };
-    
-    m.generateRandomString = function(length){
-      var random_text = '';
-      while(random_text.length < length){
-        random_text += m.codeletters.charAt(Math.floor(Math.random()*m.codeletters.length));
-      } 
-      
-      return random_text;
-    };
-    
-    m.animateIn = function(){
-      if(m.current_length < m.messages[m.message].length){
-        m.current_length = m.current_length + 2;
-        if(m.current_length > m.messages[m.message].length) {
-          m.current_length = m.messages[m.message].length;
+        'and .NET Fullstack development.'];
+      for (i = 0; i < 4; i++) {
+        var element = '#messenger' + i;
+        messenger = new Messenger($(element), total[i]);
+      }
+      setInterval(function () {
+        for (i = 0; i < 4; i++) {
+          var element = '#messenger' + i;
+          messenger = new Messenger($(element), total[i]);
         }
-        
-        var message = m.generateRandomString(m.current_length);
-        $(el).html(message);
-        
-        setTimeout(m.animateIn, 20);
-      } else { 
-        setTimeout(m.animateFadeBuffer, 20);
-      }
-    };
-    
-    m.animateFadeBuffer = function(){
-      if(m.fadeBuffer === false){
-        m.fadeBuffer = [];
-        for(var i = 0; i < m.messages[m.message].length; i++){
-          m.fadeBuffer.push({c: (Math.floor(Math.random()*12))+1, l: m.messages[m.message].charAt(i)});
-        }
-      }
-      
-      var do_cycles = false;
-      var message = ''; 
-      
-      for(var i = 0; i < m.fadeBuffer.length; i++){
-        var fader = m.fadeBuffer[i];
-        if(fader.c > 0){
-          do_cycles = true;
-          fader.c--;
-          message += m.codeletters.charAt(Math.floor(Math.random()*m.codeletters.length));
-        } else {
-          message += fader.l;
-        }
-      }
-      
-      $(el).html(message);
-      
-      if(do_cycles === true){
-        setTimeout(m.animateFadeBuffer, 50);
-      } else {
-        setTimeout(m.cycleText, 2000);
-      }
-    };
-    
-    m.cycleText = function(){
-      m.message = m.message + 1;
-      if(m.message >= m.messages.length){
-        m.message = 0;
-      }
-      
-      m.current_length = 0;
-      m.fadeBuffer = false;
-      $(el).html('');
-      
-      setTimeout(m.animateIn, 200);
-    };
-    
-    m.init();
-}
-  
-console.clear();
-var messenger = new Messenger($('#messenger'));
+      }, 8000);
     </script>
   </div>
-  <div class="grad" style="height:600px; padding : 100px;" >
-    <div id="container" class="container well well-sm" style="height: 400px; width: 600px; padding : 0px;"></div>
+  <div class="grad" style="height:1000px;padding : 300px 0px 0px 0px;">
+    <div class="container well text-center" style="height: 420px; width: 620px; padding : 10px;">
+      <div id="container" style="height: 400px; width: 600px; padding : 0px;"></div>
+    </div>
   </div>
   <script>
     sigma.parsers.gexf('Viz.gexf', {
@@ -181,11 +194,23 @@ var messenger = new Messenger($('#messenger'));
     });
   </script>
   <div id="location" class="grad1" style="height: 600px; overflow: hidden;">
+    <div class="contact well well-sm">
+      <h2 class="mb-30" style="font-size:40px;  font-family: 'Times New Roman', Times, serif;">Contact Details
+      </h2>
+      <span><i class="fas fa-home"></i>  BE-114, Rabindra Pally, Kestopur</span>
+      <span> Kolkata, West Bengal - 700101</span><br /><br />
+      <span><i class="fas fa-industry"></i>  Cognizant Academy, <br /> No.148,OMR,ASV Suntech Park,
+      <br /> Thoraipakkam, Chennai, Tamil Nadu 600096</span><br /><br />
+      <span><i class="fas fa-phone"></i> +91 8420840257</span><br /><br />
+      <span><i class="far fa-envelope"></i> empranit@gmail.com</span>
+
+    </div>
     <div id="video_overlays">
       <img src="TV.gif" id="TV">
     </div>
     <div id="video">
-      <video id="video-content" preload="auto" width="100%" height="100%" src="Locate.mp4"></video>
+      <video id="video-content" preload="auto" width="100%" height="100%"
+        src="https://pranitmodak.github.io/Locate.mp4"></video>
     </div>
   </div>
 </body>
