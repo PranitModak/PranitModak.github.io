@@ -208,12 +208,13 @@
 
   function redrawAll() {
     // remove positoins
-    for (var i = 0; i < nodes.length; i++) {
-      delete nodes[i].x;
-      delete nodes[i].y;
-    }
+    // for (var i = 0; i < nodes.length; i++) {
+    //   delete nodes[i].x;
+    //   delete nodes[i].y;
+    // }
 
     // create a network
+    
     var container = document.getElementById('mynetwork');
     var data = {
       nodes: nodes,
@@ -221,7 +222,7 @@
     };
     var options = {
       nodes: {
-        shape: 'dot',
+        shape: 'circularImage',
         scaling: {
           min: 10,
           max: 30
@@ -241,14 +242,15 @@
       physics: {
         stabilization: true,
         barnesHut: {
-          gravitationalConstant: -80000,
+          gravitationalConstant: -100000,
           springConstant: 0.001,
           springLength: 200
         }
       },
       interaction: {
         tooltipDelay: 200,
-        hideEdgesOnDrag: false
+        hideEdgesOnDrag: false,
+        hover:true
       }
     };
 
@@ -267,7 +269,7 @@
       <span><i class="fas fa-industry"></i> Cognizant Academy, <br /> No.148,OMR,ASV Suntech Park,
         <br /> Thoraipakkam, Chennai, Tamil Nadu 600096</span><br /><br />
       <span><i class="fas fa-phone"></i> +91 8420840257</span><br /><br />
-      <span><i class="far fa-envelope"></i> empranit@gmail.com</span>
+      <span><i class="far fa-envelope"></i> pranitmodak@cognizant.com</span>
 
     </div>
     <div id="video_overlays">
