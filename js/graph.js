@@ -15,7 +15,7 @@ var nodes = [
       id: "JavaFX",
       attributes: {},
       color: "rgb(146,199,180)",
-      size: 100
+      size: 150
   },
   {
       label: "Python",
@@ -24,7 +24,7 @@ var nodes = [
       id: "Python",
       attributes: {},
       color: "rgb(0,223,37)",
-      size: 100
+      size: 150
   },
   {
       label: "Linux",
@@ -33,7 +33,7 @@ var nodes = [
       id: "Linux",
       attributes: {},
       color: "rgb(238,83,52)",
-      size: 100
+      size: 150
   },
   {
       label: "WCF",
@@ -51,7 +51,7 @@ var nodes = [
       id: "SQL",
       attributes: {},
       color: "rgb(233,143,101)",
-      size: 100
+      size: 150
   },
   {
       label: "MVC",
@@ -69,7 +69,7 @@ var nodes = [
       id: "CTS Training",
       attributes: {},
       color: "rgb(91,103,252)",
-      size: 100
+      size: 250
   },
   {
       label: "ASP.NET(ASPX)",
@@ -114,7 +114,7 @@ var nodes = [
       id: "12th",
       attributes: {},
       color: "rgb(252,117,21)",
-      size: 100
+      size: 250
   },
   {
       label: "Intel gathering \u0026 Reconnaissance",
@@ -132,7 +132,7 @@ var nodes = [
       id: "Deep Learning",
       attributes: {},
       color: "rgb(108,108,228)",
-      size: 100
+      size: 150
   },
   {
       label: "Core",
@@ -177,7 +177,7 @@ var nodes = [
       id: ".NET Fullstack",
       attributes: {},
       color: "rgb(252,140,198)",
-      size: 100
+      size: 150
   },
   {
       label: "ADO.NET Entity Framework",
@@ -195,7 +195,7 @@ var nodes = [
       id: "My Journey",
       attributes: {},
       color: "rgb(252,99,74)",
-      size: 100
+      size: 350
   },
   {
       label: "Kernel",
@@ -231,7 +231,7 @@ var nodes = [
       id: "Visual Basic",
       attributes: {},
       color: "rgb(69,182,252)",
-      size: 100
+      size: 150
   },
   {
       label: "Payload Deployment",
@@ -258,7 +258,7 @@ var nodes = [
       id: "10th",
       attributes: {},
       color: "rgb(40,238,233)",
-      size: 100
+      size: 250
   },
   {
       label: "Conversational AI",
@@ -267,7 +267,7 @@ var nodes = [
       id: "Conversational AI",
       attributes: {},
       color: "rgb(140,88,201)",
-      size: 100
+      size: 150
   },
   {
       label: "Web Hacking",
@@ -285,7 +285,7 @@ var nodes = [
       id: "Java",
       attributes: {},
       color: "rgb(81,170,252)",
-      size: 100
+      size: 150
   },
   {
       label: "Ethical Hacking",
@@ -294,7 +294,7 @@ var nodes = [
       id: "Ethical Hacking",
       attributes: {},
       color: "rgb(175,118,252)",
-      size: 100
+      size: 150
   },
   {
       label: "WinForms",
@@ -321,7 +321,7 @@ var nodes = [
       id: "Reinforced Learning",
       attributes: {},
       color: "rgb(143,96,220)",
-      size: 100
+      size: 150
   },
   {
       label: "WPF",
@@ -357,7 +357,7 @@ var nodes = [
       id: "Node.js",
       attributes: {},
       color: "rgb(108,105,228)",
-      size: 100
+      size: 150
   },
   {
       label: "Android SDK",
@@ -366,7 +366,7 @@ var nodes = [
       id: "Android SDK",
       attributes: {},
       color: "rgb(163,202,109)",
-      size: 100
+      size: 150
   },
   {
       label: "HTML",
@@ -375,7 +375,7 @@ var nodes = [
       id: "HTML",
       attributes: {},
       color: "rgb(74,136,244)",
-      size: 100
+      size: 150
   },
   {
       label: "C",
@@ -384,7 +384,7 @@ var nodes = [
       id: "C",
       attributes: {},
       color: "rgb(104,193,229)",
-      size: 100
+      size: 150
   },
   {
       label: "Augmented Reality App development",
@@ -411,7 +411,7 @@ var nodes = [
       id: "Bootstrap",
       attributes: {},
       color: "rgb(193,228,109)",
-      size: 100
+      size: 150
   },
   {
       label: "Windows Applications",
@@ -429,7 +429,7 @@ var nodes = [
       id: "B.Tech",
       attributes: {},
       color: "rgb(87,252,128)",
-      size: 100
+      size: 250
   },
   {
       label: "Jquery",
@@ -438,7 +438,7 @@ var nodes = [
       id: "Jquery",
       attributes: {},
       color: "rgb(193,228,109)",
-      size: 100
+      size: 150
   },
   {
       label: "Machine Learning",
@@ -447,7 +447,7 @@ var nodes = [
       id: "Machine Learning",
       attributes: {},
       color: "rgb(4,250,48)",
-      size: 100
+      size: 150
   },
   {
       label: "Ordroid",
@@ -465,7 +465,7 @@ var nodes = [
       id: "PL/SQL",
       attributes: {},
       color: "rgb(196,222,97)",
-      size: 100
+      size: 150
   },
   {
       label: "Lex",
@@ -483,7 +483,7 @@ var nodes = [
       id: "Javascript",
       attributes: {},
       color: "rgb(166,82,35)",
-      size: 100
+      size: 150
   },
   {
       label: "Naming and Casing Standards",
@@ -537,7 +537,7 @@ var nodes = [
       id: "CSS",
       attributes: {},
       color: "rgb(56,156,246)",
-      size: 100
+      size: 150
   },
   {
       label: "Raspberry PI",
@@ -574,7 +574,7 @@ var edges = [
       id: "8",
       attributes: {},
       color: "rgb(245,100,36)",
-      size: 8.0
+      width: 30
   },
   {
       from: "Linux",
@@ -582,7 +582,7 @@ var edges = [
       id: "34",
       attributes: {},
       color: "rgb(225,76,66)",
-      size: 6.0
+      width: 10
   },
   {
       from: "Ethical Hacking",
@@ -590,7 +590,7 @@ var edges = [
       id: "35",
       attributes: {},
       color: "rgb(175,116,252)",
-      size: 6.0
+      width: 10
   },
   {
       from: "C",
@@ -598,7 +598,7 @@ var edges = [
       id: "29",
       attributes: {},
       color: "rgb(110,190,223)",
-      size: 6.0
+      width: 10
   },
   {
       from: "Android SDK",
@@ -606,7 +606,7 @@ var edges = [
       id: "59",
       attributes: {},
       color: "rgb(163,202,109)",
-      size: 6.0
+      width: 10
   },
   {
       from: "B.Tech",
@@ -614,7 +614,7 @@ var edges = [
       id: "17",
       attributes: {},
       color: "rgb(45,251,88)",
-      size: 8.0
+      width: 30
   },
   {
       from: ".NET Fullstack",
@@ -622,7 +622,7 @@ var edges = [
       id: "50",
       attributes: {},
       color: "rgb(252,140,196)",
-      size: 6.0
+      width: 10
   },
   {
       from: "Machine Learning",
@@ -630,7 +630,7 @@ var edges = [
       id: "56",
       attributes: {},
       color: "rgb(2,248,44)",
-      size: 6.0
+      width: 10
   },
   {
       from: ".NET Fullstack",
@@ -638,7 +638,7 @@ var edges = [
       id: "45",
       attributes: {},
       color: "rgb(252,140,196)",
-      size: 6.0
+      width: 10
   },
   {
       from: "B.Tech",
@@ -646,7 +646,7 @@ var edges = [
       id: "15",
       attributes: {},
       color: "rgb(141,237,112)",
-      size: 8.0
+      width: 30
   },
   {
       from: "B.Tech",
@@ -654,7 +654,7 @@ var edges = [
       id: "13",
       attributes: {},
       color: "rgb(140,240,118)",
-      size: 8.0
+      width: 30
   },
   {
       from: "B.Tech",
@@ -662,7 +662,7 @@ var edges = [
       id: "18",
       attributes: {},
       color: "rgb(43,237,82)",
-      size: 8.0
+      width: 30
   },
   {
       from: ".NET Fullstack",
@@ -670,7 +670,7 @@ var edges = [
       id: "47",
       attributes: {},
       color: "rgb(252,140,196)",
-      size: 6.0
+      width: 10
   },
   {
       from: ".NET Fullstack",
@@ -678,7 +678,7 @@ var edges = [
       id: "43",
       attributes: {},
       color: "rgb(252,140,196)",
-      size: 6.0
+      width: 10
   },
   {
       from: "Visual Basic",
@@ -686,7 +686,7 @@ var edges = [
       id: "30",
       attributes: {},
       color: "rgb(77,163,242)",
-      size: 6.0
+      width: 10
   },
   {
       from: "Machine Learning",
@@ -694,7 +694,7 @@ var edges = [
       id: "55",
       attributes: {},
       color: "rgb(2,248,44)",
-      size: 6.0
+      width: 10
   },
   {
       from: "C",
@@ -702,7 +702,7 @@ var edges = [
       id: "28",
       attributes: {},
       color: "rgb(110,190,223)",
-      size: 6.0
+      width: 10
   },
   {
       from: "My Journey",
@@ -710,7 +710,7 @@ var edges = [
       id: "27",
       attributes: {},
       color: "rgb(171,101,163)",
-      size: 10.0
+      width: 60
   },
   {
       from: "12th",
@@ -718,7 +718,7 @@ var edges = [
       id: "7",
       attributes: {},
       color: "rgb(242,130,61)",
-      size: 8.0
+      width: 30
   },
   {
       from: "Ethical Hacking",
@@ -726,7 +726,7 @@ var edges = [
       id: "36",
       attributes: {},
       color: "rgb(175,116,252)",
-      size: 6.0
+      width: 10
   },
   {
       from: "B.Tech",
@@ -734,7 +734,7 @@ var edges = [
       id: "10",
       attributes: {},
       color: "rgb(131,185,190)",
-      size: 8.0
+      width: 30
   },
   {
       from: "12th",
@@ -742,7 +742,7 @@ var edges = [
       id: "9",
       attributes: {},
       color: "rgb(242,130,60)",
-      size: 8.0
+      width: 30
   },
   {
       from: "Ethical Hacking",
@@ -750,7 +750,7 @@ var edges = [
       id: "38",
       attributes: {},
       color: "rgb(175,116,252)",
-      size: 6.0
+      width: 10
   },
   {
       from: "Java",
@@ -758,7 +758,7 @@ var edges = [
       id: "31",
       attributes: {},
       color: "rgb(83,157,242)",
-      size: 6.0
+      width: 10
   },
   {
       from: "Conversational AI",
@@ -766,7 +766,7 @@ var edges = [
       id: "60",
       attributes: {},
       color: "rgb(140,87,200)",
-      size: 6.0
+      width: 10
   },
   {
       from: "JavaFX",
@@ -774,7 +774,7 @@ var edges = [
       id: "51",
       attributes: {},
       color: "rgb(146,199,179)",
-      size: 6.0
+      width: 10
   },
   {
       from: "B.Tech",
@@ -782,7 +782,7 @@ var edges = [
       id: "19",
       attributes: {},
       color: "rgb(125,227,118)",
-      size: 8.0
+      width: 30
   },
   {
       from: "Ethical Hacking",
@@ -790,7 +790,7 @@ var edges = [
       id: "40",
       attributes: {},
       color: "rgb(175,116,252)",
-      size: 6.0
+      width: 10
   },
   {
       from: "Conversational AI",
@@ -798,7 +798,7 @@ var edges = [
       id: "61",
       attributes: {},
       color: "rgb(134,88,208)",
-      size: 6.0
+      width: 10
   },
   {
       from: ".NET Fullstack",
@@ -806,7 +806,7 @@ var edges = [
       id: "46",
       attributes: {},
       color: "rgb(252,140,196)",
-      size: 6.0
+      width: 10
   },
   {
       from: "10th",
@@ -814,7 +814,7 @@ var edges = [
       id: "3",
       attributes: {},
       color: "rgb(57,187,238)",
-      size: 8.0
+      width: 30
   },
   {
       from: "IOT",
@@ -822,7 +822,7 @@ var edges = [
       id: "53",
       attributes: {},
       color: "rgb(124,211,169)",
-      size: 6.0
+      width: 10
   },
   {
       from: "CTS Training",
@@ -830,7 +830,7 @@ var edges = [
       id: "21",
       attributes: {},
       color: "rgb(117,99,236)",
-      size: 8.0
+      width: 30
   },
   {
       from: "Machine Learning",
@@ -838,7 +838,7 @@ var edges = [
       id: "58",
       attributes: {},
       color: "rgb(2,248,44)",
-      size: 6.0
+      width: 10
   },
   {
       from: "CTS Training",
@@ -846,7 +846,7 @@ var edges = [
       id: "22",
       attributes: {},
       color: "rgb(99,105,240)",
-      size: 8.0
+      width: 30
   },
   {
       from: "10th",
@@ -854,7 +854,7 @@ var edges = [
       id: "1",
       attributes: {},
       color: "rgb(54,210,242)",
-      size: 8.0
+      width: 30
   },
   {
       from: "Machine Learning",
@@ -862,7 +862,7 @@ var edges = [
       id: "57",
       attributes: {},
       color: "rgb(2,248,44)",
-      size: 6.0
+      width: 10
   },
   {
       from: "CTS Training",
@@ -870,7 +870,7 @@ var edges = [
       id: "23",
       attributes: {},
       color: "rgb(115,95,226)",
-      size: 8.0
+      width: 30
   },
   {
       from: "Ethical Hacking",
@@ -878,7 +878,7 @@ var edges = [
       id: "37",
       attributes: {},
       color: "rgb(175,116,252)",
-      size: 6.0
+      width: 10
   },
   {
       from: "Ethical Hacking",
@@ -886,7 +886,7 @@ var edges = [
       id: "39",
       attributes: {},
       color: "rgb(175,116,252)",
-      size: 6.0
+      width: 10
   },
   {
       from: ".NET Fullstack",
@@ -894,7 +894,7 @@ var edges = [
       id: "42",
       attributes: {},
       color: "rgb(252,140,196)",
-      size: 6.0
+      width: 10
   },
   {
       from: "10th",
@@ -902,7 +902,7 @@ var edges = [
       id: "2",
       attributes: {},
       color: "rgb(60,204,242)",
-      size: 8.0
+      width: 30
   },
   {
       from: "B.Tech",
@@ -910,7 +910,7 @@ var edges = [
       id: "16",
       attributes: {},
       color: "rgb(108,239,144)",
-      size: 8.0
+      width: 30
   },
   {
       from: "My Journey",
@@ -918,7 +918,7 @@ var edges = [
       id: "24",
       attributes: {},
       color: "rgb(146,168,153)",
-      size: 10.0
+      width: 60
   },
   {
       from: "10th",
@@ -926,7 +926,7 @@ var edges = [
       id: "4",
       attributes: {},
       color: "rgb(48,197,239)",
-      size: 8.0
+      width: 30
   },
   {
       from: "B.Tech",
@@ -934,7 +934,7 @@ var edges = [
       id: "11",
       attributes: {},
       color: "rgb(169,196,163)",
-      size: 8.0
+      width: 30
   },
   {
       from: "Java",
@@ -942,7 +942,7 @@ var edges = [
       id: "32",
       attributes: {},
       color: "rgb(76,166,245)",
-      size: 6.0
+      width: 10
   },
   {
       from: "Ethical Hacking",
@@ -950,7 +950,7 @@ var edges = [
       id: "41",
       attributes: {},
       color: "rgb(175,116,252)",
-      size: 6.0
+      width: 10
   },
   {
       from: "12th",
@@ -958,7 +958,7 @@ var edges = [
       id: "5",
       attributes: {},
       color: "rgb(237,113,34)",
-      size: 8.0
+      width: 30
   },
   {
       from: ".NET Fullstack",
@@ -966,7 +966,7 @@ var edges = [
       id: "49",
       attributes: {},
       color: "rgb(252,140,196)",
-      size: 6.0
+      width: 10
   },
   {
       from: "B.Tech",
@@ -974,7 +974,7 @@ var edges = [
       id: "12",
       attributes: {},
       color: "rgb(116,225,154)",
-      size: 8.0
+      width: 30
   },
   {
       from: "10th",
@@ -982,7 +982,7 @@ var edges = [
       id: "0",
       attributes: {},
       color: "rgb(72,215,231)",
-      size: 8.0
+      width: 30
   },
   {
       from: "My Journey",
@@ -990,7 +990,7 @@ var edges = [
       id: "25",
       attributes: {},
       color: "rgb(252,108,47)",
-      size: 10.0
+      width: 60
   },
   {
       from: "12th",
@@ -998,7 +998,7 @@ var edges = [
       id: "6",
       attributes: {},
       color: "rgb(209,99,28)",
-      size: 8.0
+      width: 30
   },
   {
       from: "IOT",
@@ -1006,7 +1006,7 @@ var edges = [
       id: "52",
       attributes: {},
       color: "rgb(124,211,169)",
-      size: 6.0
+      width: 10
   },
   {
       from: "CTS Training",
@@ -1014,7 +1014,7 @@ var edges = [
       id: "20",
       attributes: {},
       color: "rgb(99,104,240)",
-      size: 8.0
+      width: 30
   },
   {
       from: ".NET Fullstack",
@@ -1022,7 +1022,7 @@ var edges = [
       id: "44",
       attributes: {},
       color: "rgb(252,140,196)",
-      size: 6.0
+      width: 10
   },
   {
       from: "B.Tech",
@@ -1030,7 +1030,7 @@ var edges = [
       id: "14",
       attributes: {},
       color: "rgb(140,240,118)",
-      size: 8.0
+      width: 30
   },
   {
       from: ".NET Fullstack",
@@ -1038,7 +1038,7 @@ var edges = [
       id: "48",
       attributes: {},
       color: "rgb(252,140,196)",
-      size: 6.0
+      width: 10
   },
   {
       from: "Linux",
@@ -1046,7 +1046,7 @@ var edges = [
       id: "33",
       attributes: {},
       color: "rgb(234,77,48)",
-      size: 6.0
+      width: 10
   },
   {
       from: "My Journey",
@@ -1054,7 +1054,7 @@ var edges = [
       id: "26",
       attributes: {},
       color: "rgb(169,175,101)",
-      size: 10.0
+      width: 60
   },
   {
       from: "IOT",
@@ -1062,6 +1062,6 @@ var edges = [
       id: "54",
       attributes: {},
       color: "rgb(127,220,164)",
-      size: 6.0
+      width: 10
   }
 ]
