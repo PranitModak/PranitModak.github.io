@@ -63,6 +63,11 @@
   <script src="plugins/sigma.parsers.gexf/sigma.parsers.gexf.js"></script>
   <script src="js/script.js"></script>
   <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'>
+  <link href='https://fonts.googleapis.com/css?family=Audiowide|Iceland|Monoton|Pacifico|Press+Start+2P|Vampiro+One'
+    rel='stylesheet' type='text/css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css'>
+  <script src="js/exampleUtil.js"></script>
 
 </head>
 
@@ -184,23 +189,66 @@
     </script>
   </div>
   <div class="grad" style="height:1000px;padding : 300px 0px 0px 0px;">
+    <div id="headcont">
+
+      <p><a href="https://en.wikipedia.org/wiki/Red">
+          My Skills
+        </a></p>
+
+    </div>
     <div class="container well text-center" style="height: 420px; width: 620px; padding : 10px;">
-      <div id="container" style="height: 400px; width: 600px; padding : 0px;"></div>
+      <!-- <div id="container" style="height: 400px; width: 600px; padding : 0px;"></div> -->
+      <div id="mynetwork"></div>
     </div>
   </div>
+  <script type="text/javascript">
+    var gephiJSON = loadJSON("Graphs.json"); // code in importing_from_gephi.
+
+    // you can customize the result like with these options. These are explained below.
+    // These are the default options.
+    var parserOptions = {
+      edges: {
+        inheritColors: false
+      },
+      nodes: {
+        fixed: true,
+        parseColor: false
+      }
+    }
+
+    // parse the gephi file to receive an object
+    // containing nodes and edges in vis format.
+    var parsed = vis.network.convertGephi(gephiJSON, parserOptions);
+    var container = document.getElementById('mynetwork');
+    // provide data in the normal fashion
+    var data = {
+      nodes: parsed.nodes,
+      edged: parsed.edges
+    };
+
+    // create a network
+    var network = new vis.Network(container, data);
+  </script>
   <script>
     sigma.parsers.gexf('Viz.gexf', {
       container: 'container'
+    }, function (s) {
+      sigma.plugins.animate(
+        s,
+        {
+          color: 'blue'
+        }
+      );
     });
   </script>
   <div id="location" class="grad1" style="height: 600px; overflow: hidden;">
     <div class="contact well well-sm">
       <h2 class="mb-30" style="font-size:40px;  font-family: 'Times New Roman', Times, serif;">Contact Details
       </h2>
-      <span><i class="fas fa-home"></i>  BE-114, Rabindra Pally, Kestopur</span>
+      <span><i class="fas fa-home"></i> BE-114, Rabindra Pally, Kestopur</span>
       <span> Kolkata, West Bengal - 700101</span><br /><br />
-      <span><i class="fas fa-industry"></i>  Cognizant Academy, <br /> No.148,OMR,ASV Suntech Park,
-      <br /> Thoraipakkam, Chennai, Tamil Nadu 600096</span><br /><br />
+      <span><i class="fas fa-industry"></i> Cognizant Academy, <br /> No.148,OMR,ASV Suntech Park,
+        <br /> Thoraipakkam, Chennai, Tamil Nadu 600096</span><br /><br />
       <span><i class="fas fa-phone"></i> +91 8420840257</span><br /><br />
       <span><i class="far fa-envelope"></i> empranit@gmail.com</span>
 
