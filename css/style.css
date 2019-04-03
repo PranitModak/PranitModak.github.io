@@ -272,3 +272,18 @@ pointer-events: none;
   width: 600px;
   height: 400px;
 }
+
+#three-container {
+  height: 400px;
+  width: 600px;
+  margin-bottom: 20%;
+}
+
+canvas {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.pic {
+  box-shadow: #000;
+}
