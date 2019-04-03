@@ -196,9 +196,14 @@
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/bas.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/OrbitControls-2.js"></script>
     <script>
-      window.onload = init;
+      
+      $(document).ready(function(){init();})
+      var image1 = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/winter.jpg',
+      image2 = 'MyPic.png',
+      divname = 'three-container';
       console.ward = function () { }; // what warnings?
 
+      setInterval(function(){image2=image1;},3000);
       function init() {
         var root = new THREERoot({
           createCameraControls: !true,
@@ -216,7 +221,7 @@
         var slide = new Slide(width, height, 'in');
         var l1 = new THREE.ImageLoader();
         l1.setCrossOrigin('Anonymous');
-        l1.load('https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/winter.jpg', function (img) {
+        l1.load(image1, function (img) {
           slide.setImage(img);
         })
         root.scene.add(slide);
@@ -224,7 +229,7 @@
         var slide2 = new Slide(width, height, 'out');
         var l2 = new THREE.ImageLoader();
         l2.setCrossOrigin('Anonymous');
-        l2.load('MyPic.png', function (img) {
+        l2.load(image2, function (img) {
           slide2.setImage(img);
         })
 
@@ -462,7 +467,7 @@
           alpha: true
         });
         this.renderer.setPixelRatio(Math.min(2, window.devicePixelRatio || 1));
-        document.getElementById('three-container').appendChild(this.renderer.domElement);
+        document.getElementById(divname).appendChild(this.renderer.domElement);
 
         this.camera = new THREE.PerspectiveCamera(
           params.fov,
