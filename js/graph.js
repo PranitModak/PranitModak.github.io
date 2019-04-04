@@ -651,10 +651,10 @@ var nodes = [
       size: 150
   },
   {
-      title: "Ordroid",
+      title: "Odroid",
       x: -258.23028564453125,
       y: -220.95985412597656,
-      id: "Ordroid",
+      id: "Odroid",
       attributes: {},
       color: "rgb(124,213,167)",
       image: {
@@ -1311,7 +1311,7 @@ var edges = [
   },
   {
       from: "IOT",
-      to: "Ordroid",
+      to: "Odroid",
       id: "54",
       attributes: {},
       color: "rgb(127,220,164)",
