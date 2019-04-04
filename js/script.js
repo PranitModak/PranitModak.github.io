@@ -19,6 +19,57 @@ $(document).ready(function () {
         else
             document.getElementById("video-content").pause();
     }, true /*Capture event*/);
+    var tabs = $('.tabs');
+    var selector = $('.tabs').find('a').length;
+    //var selector = $(".tabs").find(".selector");
+    var activeItem = tabs.find('.active');
+    var activeWidth = activeItem.innerWidth();
+    $(".selector").css({
+        "left": activeItem.position.left + "px",
+        "width": activeWidth + "px"
+    });
+
+    $(".tabs").on("click", "a", function (e) {
+        e.preventDefault();
+        $('.tabs a').removeClass("active");
+        $(this).addClass('active');
+        var activeWidth = $(this).innerWidth();
+        var itemPos = $(this).position();
+        $(".selector").css({
+            "left": itemPos.left + "px",
+            "width": activeWidth + "px"
+        });
+    });
+
+    var foc = "full";
+    $("#Start").on("click", function (e) {
+        fitAnimated();
+        foc = "full"
+    });
+    $("#10th").on("click", function (e) {
+        if(foc!="full")
+        fitAnimated();
+        setTimeout(function(){focusRandom("10th");}, 1800);
+        foc = ""
+    });
+    $("#12th").on("click", function (e) {
+        if(foc!="full")
+        fitAnimated();
+        setTimeout(function(){focusRandom("12th");}, 1800);
+        foc = ""
+    });
+    $("#Tech").on("click", function (e) {
+        if(foc!="full")
+        fitAnimated();
+        setTimeout(function(){focusRandom("B.Tech");}, 1800);
+        foc = ""
+    });
+    $("#CTS").on("click", function (e) {
+        if(foc!="full")
+        fitAnimated();
+        setTimeout(function(){focusRandom("CTS Training");}, 1800);
+        foc = ""
+    });
 })
 function isElementInViewport(el) {
     var rect = el.getBoundingClientRect();
@@ -29,3 +80,5 @@ function isElementInViewport(el) {
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
 }
+
+
