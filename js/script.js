@@ -70,6 +70,13 @@ $(document).ready(function () {
         setTimeout(function(){focusRandom("CTS Training");}, 1800);
         foc = ""
     });
+
+    $(".button").click(function(){
+        $(".social.twitter").toggleClass("clicked");
+        $(".social.facebook").toggleClass("clicked");
+       $(".social.google").toggleClass("clicked");
+        $(".social.youtube").toggleClass("clicked");
+      })
 })
 function isElementInViewport(el) {
     var rect = el.getBoundingClientRect();
