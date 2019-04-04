@@ -490,3 +490,68 @@ a {
   margin-left: 20%;
   margin-bottom: 10%;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600');
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  filter: url('#goo');
+}
+.button {
+  z-index: 99;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 40px;
+  background: linear-gradient(45deg, #b388eb, #8093f1);
+  border-radius: 20px;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 200;
+}
+.social {
+  opacity: 0;
+  position: relative;
+  margin: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+.social i {
+  margin-top: 10px;
+}
+.social a {
+  color: #fff;
+}
+.twitter {
+  background: #00aced;
+}
+.facebook {
+  background: #3b5998;
+}
+.google {
+  background: #dd4b39;
+}
+.youtube {
+  background: #b00;
+}
+.clicked {
+  opacity: 1;
+  transition: 1.2s all ease;
+  transform: translateY(56px);
+}
+
+#social {
+  margin-top: 32% !important;
+  z-index: 2000 !important;
+}
