@@ -72,10 +72,10 @@ $(document).ready(function () {
     });
 
     $(".button").click(function(){
-        $(".social.twitter").toggleClass("clicked");
-        $(".social.facebook").toggleClass("clicked");
-       $(".social.google").toggleClass("clicked");
-        $(".social.youtube").toggleClass("clicked");
+        $(".social.reddit").toggleClass("clicked");
+        $(".social.instagram").toggleClass("clicked");
+       $(".social.devian").toggleClass("clicked");
+        $(".social.linked").toggleClass("clicked");
       })
 })
 function isElementInViewport(el) {
