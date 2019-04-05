@@ -351,7 +351,7 @@ a {
 .m {
 	display: block;
 	width: 232px;
-	height: 500px;
+	height: 0px;
 	position: relative;
 	float: right;
 	padding: 0 30px 0 40px;
@@ -361,8 +361,8 @@ a {
 
 .m .li {
 	display: block;
-	width: 100px;
-	height: 100px;
+	width: 75px;
+	height: 75px;
 	position: relative;
 	z-index: 1000;
 	float: left;
@@ -378,12 +378,12 @@ a {
 }
 
 .m .li > img {
-	width: 100px;
-	height: 100px;
-	min-width: 100px;
-	min-height: 100px;
-	max-width: 100px;
-	max-height: 100px;
+	width: 75px;
+	height: 75px;
+	min-width: 75px;
+	min-height: 75px;
+	max-width: 75px;
+	max-height: 75px;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -533,17 +533,17 @@ a {
 .social a {
   color: #fff;
 }
-.twitter {
+.reddit {
+  background: #FF5700;
+}
+.instagram {
+  background: #e4405f;
+}
+.devian {
+  background: #2e7d32;
+}
+.linked {
   background: #00aced;
-}
-.facebook {
-  background: #3b5998;
-}
-.google {
-  background: #dd4b39;
-}
-.youtube {
-  background: #b00;
 }
 .clicked {
   opacity: 1;
@@ -552,6 +552,11 @@ a {
 }
 
 #social {
-  margin-top: 31% !important;
+  margin-top: 110.5% !important;
   z-index: 2000 !important;
+}
+
+.socbox {
+  width: 80% !important;
+  height: 35% !important;
 }
