@@ -74,9 +74,52 @@ $(document).ready(function () {
     $(".button").click(function(){
         $(".social.reddit").toggleClass("clicked");
         $(".social.instagram").toggleClass("clicked");
-       $(".social.devian").toggleClass("clicked");
+        $(".social.devian").toggleClass("clicked");
         $(".social.linked").toggleClass("clicked");
-      })
+    });
+
+    $(".m1").click(function(){
+        $(".picinfo").addClass("tracking-out-contract");
+        setTimeout(function(){ $(".picinfo").removeClass("tracking-out-contract");},900);
+        setTimeout(function(){ $(".picinfo").html("Attended Amazon's AWS DeepRacer Event from Cognizant.");},900);
+        $(".picinfo").addClass("tracking-in-expand");
+        setTimeout(function(){ $(".picinfo").removeClass("tracking-in-expand");},1800);
+    });
+    $(".m2").click(function(){
+        $(".picinfo").addClass("tracking-out-contract");
+        setTimeout(function(){ $(".picinfo").removeClass("tracking-out-contract");},900);
+        setTimeout(function(){ $(".picinfo").html("Have been a Brand Ambassador as a model for a company.");},900);
+        $(".picinfo").addClass("tracking-in-expand");
+        setTimeout(function(){ $(".picinfo").removeClass("tracking-in-expand");},1800);
+    });
+    $(".m3").click(function(){
+        $(".picinfo").addClass("tracking-out-contract");
+        setTimeout(function(){ $(".picinfo").removeClass("tracking-out-contract");},900);
+        setTimeout(function(){ $(".picinfo").html("Developed a software during 1st year of college to simulate Gate ICs.");},900);
+        $(".picinfo").addClass("tracking-in-expand");
+        setTimeout(function(){ $(".picinfo").removeClass("tracking-in-expand");},1800);
+    });
+    $(".m4").click(function(){
+        $(".picinfo").addClass("tracking-out-contract");
+        setTimeout(function(){ $(".picinfo").removeClass("tracking-out-contract");},900);
+        setTimeout(function(){ $(".picinfo").html("Received recognition from IIT Kharagpur and IEM for my research on swarm robotics.");},900);
+        $(".picinfo").addClass("tracking-in-expand");
+        setTimeout(function(){ $(".picinfo").removeClass("tracking-in-expand");},1800);
+    });
+    $(".m5").click(function(){
+        $(".picinfo").addClass("tracking-out-contract");
+        setTimeout(function(){ $(".picinfo").removeClass("tracking-out-contract");},900);
+        setTimeout(function(){ $(".picinfo").html("Made a 3D Printer as final year's project.");},900);
+        $(".picinfo").addClass("tracking-in-expand");
+        setTimeout(function(){ $(".picinfo").removeClass("tracking-in-expand");},1800);
+    });
+    $(".m6").click(function(){
+        $(".picinfo").addClass("tracking-out-contract");
+        setTimeout(function(){ $(".picinfo").removeClass("tracking-out-contract");},900);
+        setTimeout(function(){ $(".picinfo").html("Designed a ChatBot for Cognizant Trainees to ask queries normally answered by 'Coach' (BatchOwners).");},900);
+        $(".picinfo").addClass("tracking-in-expand");
+        setTimeout(function(){ $(".picinfo").removeClass("tracking-in-expand");},1800);
+    });
 })
 function isElementInViewport(el) {
     var rect = el.getBoundingClientRect();
