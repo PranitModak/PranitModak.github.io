@@ -395,7 +395,7 @@ a {
 	height: 500px;
 	position: absolute;
 	top: 0;
-	right: 400px;
+	right: 120%;
 	perspective: 1000px;
 }
 
@@ -620,21 +620,29 @@ a {
     opacity: 0;
   }
 }
-@import url('https://fonts.googleapis.com/css?family=Concert+One');
-@import url('https://fonts.googleapis.com/css?family=Yatra+One');
+
 .picinfo {
+  width: auto !important;
+  height: auto !important;
+  font-family: monospace;
+  font-size: 20px;
+  color: antiquewhite;
+  text-shadow: 0 2px 2px rgba(#000, 0.9);
+  -webkit-user-select: none;
+-khtml-user-select: none;
+-webkit-touch-callout : none; 
+-moz-user-select: none;
+-o-user-select: none;
+user-select: none;
+pointer-events: none;
+}
+
+.infodiv {
   width: 19% !important;
   height: 77% !important;
   margin-left: 8%;
   margin-top: 4%;
   position: absolute;
-  float: left;
-  font-size: 30px;
-  font-family: 'Yatra One', cursive;
-  background: linear-gradient(to right, #00ffcc 0%, #ffcc66 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 2px 2px 2px #222;
-  padding: 10% 0;
+  float: left; 
+  filter: none !important;
 }
