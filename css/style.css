@@ -178,9 +178,10 @@ canvas{
 }
 
 /*Neon*/
+@import 'https://fonts.googleapis.com/css?family=Salsa|Pacifico';
 p {
   text-align: center;
-  font-size: 7em;
+  font-size: 25px;
   margin: 20px 0 20px 0;
 }
 
@@ -193,7 +194,7 @@ p {
 
 p {
   color: #fff;
-  font-family: Monoton;
+  font-family: 'Pacifico', cursive;
   -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
   -moz-animation: neon1 1.5s ease-in-out infinite alternate;
   animation: neon1 1.5s ease-in-out infinite alternate;
@@ -211,7 +212,7 @@ pointer-events: none;
 p:hover {
   color: #ffffff;
   color: #FF1177;
-  font-family: Monoton;
+  font-family: 'Pacifico', cursive;
   -webkit-animation: none;
   -moz-animation: none;
   animation: none;
@@ -559,6 +560,7 @@ a {
 .socbox {
   width: 80% !important;
   height: 35% !important;
+  background-color: rgba(0,0,0,0.1)
 }
 
 .tracking-in-expand {
