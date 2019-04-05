@@ -69,7 +69,6 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css'>
   <script src="js/exampleUtil.js"></script>
   <script src="js/graph.js"></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
 
 </head>
 
@@ -77,136 +76,32 @@
   <div id="intro" style="height : 100%; width : 100%">
     <div id="particles-js"></div>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script>
-      particlesJS.load('particles-js', 'particles.json', function () {
-        console.log('particles.json loaded...');
-      });
-    </script>
+    <script src="js/intro-back.js"></script>
     <div class="pic"><img src="MyPic.png" width="400" height="700"></div>
     <div id="messenger0"></div>
     <div id="messenger1"></div>
     <div id="messenger2"></div>
     <div id="messenger3"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
-    <script id="rendered-js">
-      var Messenger = function (el, text) {
-        'use strict';
-        var m = this;
-
-        m.init = function () {
-          m.codeletters = "&#*+%?£@§$";
-          m.message = 0;
-          m.current_length = 0;
-          m.fadeBuffer = false;
-          m.messages = [text];
-
-          setTimeout(m.animateIn, 100);
-        };
-
-        m.generateRandomString = function (length) {
-          var random_text = '';
-          while (random_text.length < length) {
-            random_text += m.codeletters.charAt(Math.floor(Math.random() * m.codeletters.length));
-          }
-
-          return random_text;
-        };
-
-        m.animateIn = function () {
-          if (m.current_length < m.messages[m.message].length) {
-            m.current_length = m.current_length + 2;
-            if (m.current_length > m.messages[m.message].length) {
-              m.current_length = m.messages[m.message].length;
-            }
-
-            var message = m.generateRandomString(m.current_length);
-            $(el).html(message);
-
-            setTimeout(m.animateIn, 20);
-          } else {
-            setTimeout(m.animateFadeBuffer, 20);
-          }
-        };
-
-        m.animateFadeBuffer = function () {
-          if (m.fadeBuffer === false) {
-            m.fadeBuffer = [];
-            for (var i = 0; i < m.messages[m.message].length; i++) {
-              m.fadeBuffer.push({ c: (Math.floor(Math.random() * 12)) + 1, l: m.messages[m.message].charAt(i) });
-            }
-          }
-
-          var do_cycles = false;
-          var message = '';
-
-          for (var i = 0; i < m.fadeBuffer.length; i++) {
-            var fader = m.fadeBuffer[i];
-            if (fader.c > 0) {
-              do_cycles = true;
-              fader.c--;
-              message += m.codeletters.charAt(Math.floor(Math.random() * m.codeletters.length));
-            } else {
-              message += fader.l;
-            }
-          }
-
-          $(el).html(message);
-          if (do_cycles === true) {
-            setTimeout(m.animateFadeBuffer, 50);
-          } else {
-            //setTimeout(m.cycleText, 2000);
-          }
-        };
-
-        m.cycleText = function () {
-          m.message = m.message + 1;
-          if (m.message >= m.messages.length) {
-            m.message = 0;
-          }
-          m.current_length = 0;
-          m.fadeBuffer = false;
-
-          setTimeout(m.animateIn, 200);
-        };
-
-        m.init();
-      }
-
-      console.clear();
-      var messenger;
-      var total = ["Hi! I 'm Pranit Modak.",
-        'I am a Developer.',
-        'Interested in AI,',
-        'and .NET Fullstack development.'];
-      for (i = 0; i < 4; i++) {
-        var element = '#messenger' + i;
-        messenger = new Messenger($(element), total[i]);
-      }
-      setInterval(function () {
-        for (i = 0; i < 4; i++) {
-          var element = '#messenger' + i;
-          messenger = new Messenger($(element), total[i]);
-        }
-      }, 8000);
-    </script>
+    <script src="js/intro-render.js"></script>
   </div>
   <div class="grad" style="height:1900px;padding : 200px 0px 100px 0px;">
     <div id="picimage">
       <ul class="m">
-        <li class="m1 li" tabindex="1"><img src="//unsplash.it/500/500?random=1" alt="" /></li>
-        <li class="m2 li" tabindex="2"><img src="//unsplash.it/500/500?random=2" alt="" /></li>
-        <li class="m3 li" tabindex="3"><img src="//unsplash.it/500/500?random=3" alt="" /></li>
-        <li class="m4 li" tabindex="4"><img src="//unsplash.it/500/500?random=4" alt="" /></li>
-        <li class="m5 li" tabindex="5"><img src="//unsplash.it/500/500?random=5" alt="" /></li>
-        <li class="m6 li" tabindex="6"><img src="//unsplash.it/500/500?random=6" alt="" /></li>
+        <li class="m1 li" tabindex="1"><img src="image/Deepracer.jpg" alt="" /></li>
+        <li class="m2 li" tabindex="2"><img src="image/Zyzz.jpg" alt="" /></li>
+        <li class="m3 li" tabindex="3"><img src="image/chipCircuit.png" alt="" /></li>
+        <li class="m4 li" tabindex="4"><img src="image/IEM.jpg" alt="" /></li>
+        <li class="m5 li" tabindex="5"><img src="image/3DPrinter.jpg" alt="" /></li>
+        <li class="m6 li" tabindex="6"><img src="image/ChatBot.png" alt="" /></li>
         <li class="cube-wrap">
             <div class="cube">
-                <div class="front"><img src="//unsplash.it/500/500?random=1" alt="" /></div>
-                <div class="right"><img src="//unsplash.it/500/500?random=2" alt="" /></div>
-                <div class="top"><img src="//unsplash.it/500/500?random=3" alt="" /></div>
-                <div class="left"><img src="//unsplash.it/500/500?random=4" alt="" /></div>
-                <div class="bottom"><img src="//unsplash.it/500/500?random=5" alt="" /></div>
-                <div class="back"><img src="//unsplash.it/500/500?random=6" alt="" /></div>
+                <div class="front"><img src="image/Deepracer.jpg"  alt="" /></div>
+                <div class="right"><img src="image/Zyzz.jpg" alt="" /></div>
+                <div class="top"><img src="image/chipCircuit.png" alt="" /></div>
+                <div class="left"><img src="image/IEM.jpg" alt="" /></div>
+                <div class="bottom"><img src="image/3DPrinter.jpg" alt="" /></div>
+                <div class="back"><img src="image/ChatBot.png" alt="" /></div>
             </div>
         </li>
     </ul>
@@ -235,89 +130,7 @@
       <div id="mynetwork"></div>
     </div>
   </div>
-  <script type="text/javascript">
-    var network;
-    function focusRandom(idnum) {
-      var nodeId = idnum;
-      var options = {
-        scale: 0.2,
-        offset: {x:0,y:0},
-        animation: {
-          duration: 1000,
-          easingFunction: "easeInOutQuad"
-        }
-      };
-      console.log('Focusing on node: ' + nodeId);
-      console.log('Node: ' + nodeId + ' in focus.');
-      network.focus(nodeId, options);
-    }
-
-    function fitAnimated() {
-      var options = {offset: {x:0,y:0},
-        duration: 900,
-        easingFunction: "easeInOutQuad"
-      };
-      console.log('Doing fit() Animation.');
-      console.log('Animation finished.');
-      network.fit({animation:options});
-    }
-
-    function redrawAll() {
-      // remove positoins
-      // for (var i = 0; i < nodes.length; i++) {
-      //   delete nodes[i].x;
-      //   delete nodes[i].y;
-      // }
-
-      // create a network
-
-      var container = document.getElementById('mynetwork');
-      var data = {
-        nodes: nodes,
-        edges: edges
-      };
-      var options = {
-        nodes: {
-          shape: 'circularImage',
-          scaling: {
-            min: 10,
-            max: 30
-          },
-          font: {
-            size: 12,
-            face: 'Tahoma'
-          }
-        },
-        edges: {
-          width: 0.15,
-          color: { inherit: 'from' },
-          smooth: {
-            type: 'continuous'
-          }
-        },
-        physics: {
-          stabilization: {
-            iterations: 1200
-          },
-          barnesHut: {
-            gravitationalConstant: -100000,
-            springConstant: 0.001,
-            springLength: 200
-          }
-        },
-        interaction: {
-          tooltipDelay: 200,
-          hideEdgesOnDrag: false,
-          hover: true
-        }
-      };
-
-      // Note: data is coming from ./datasources/WorldCup2014.js
-      network = new vis.Network(container, data, options);
-    }
-
-    redrawAll()
-  </script>
+  <script src="js/draw-graph.js"></script>
   <div id="location" class="grad1" style="height: 600px; overflow: hidden;">
     <div class="contact well well-sm">
       <h2 class="mb-30" style="font-size:40px;  font-family: 'Times New Roman', Times, serif;">Contact Details
@@ -338,12 +151,12 @@
         src="https://pranitmodak.github.io/Locate.mp4"></video>
     </div>
     <div id="social">
-      <div class="container">
+      <div class="container socbox">
         <div class="button">Share</div>
-        <div class="social twitter"><a href="https://twitter.com/sa_sha26" target="_blank"><i class="fa fa-twitter"></i></a></div>
-        <div class="social facebook"><i class="fa fa-facebook"></i></div>
-        <div class=" social google"><i class="fa fa-google-plus"></i></div>
-        <div class="social youtube"><a href="https://www.youtube.com/channel/UCCATAa8MWoBuH-sR_Jlx29A" target="_blank"><i class="fa fa-youtube"></i></a></div>
+        <div class="social linked"><a href="https://in.linkedin.com/in/pranit-modak" target="_blank"><i class="fab fa-linkedin"></i></a></div>
+        <div class="social instagram"><a href="https://www.instagram.com/pranit_lucifer/" target="_blank"><i class="fab fa-instagram"></i></a></div>
+        <div class=" social devian"><a href="https://www.deviantart.com/pranitakalucifer" target="_blank"><i class="fab fa-deviantart"></i></a></div>
+        <div class="social reddit"><a href="https://twitter.com/pranitmodak" target="_blank"><i class="fab fa-reddit"></i></a></div>
       </div>
       
       <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
