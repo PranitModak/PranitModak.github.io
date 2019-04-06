@@ -20,7 +20,7 @@ ul {
   width: 400px;
   height: 400px;
   background-color: rgba(151, 204, 250, 0.61);
-  font-size: 20px;
+  font-size: 18px;
   color: antiquewhite;
 }
 
@@ -560,7 +560,7 @@ a {
 .socbox {
   width: 80% !important;
   height: 35% !important;
-  background-color: rgba(0,0,0,0.1)
+  background-color: rgba(0,0,0,0)
 }
 
 .tracking-in-expand {
