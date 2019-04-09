@@ -1,4 +1,4 @@
-var Messenger = function (el, text) {
+var Headmsg = function (el, text) {
     'use strict';
     var m = this;
 
@@ -61,8 +61,10 @@ var Messenger = function (el, text) {
 
       $(el).html(message);
       if (do_cycles === true) {
-        setTimeout(m.animateFadeBuffer, 80);
-      } 
+        setTimeout(m.animateFadeBuffer, 50);
+      } else {
+        //setTimeout(m.cycleText, 2000);
+      }
     };
 
     m.cycleText = function () {
@@ -81,17 +83,18 @@ var Messenger = function (el, text) {
 
   console.clear();
   var messenger;
-  var total = ["Hi! I 'm Pranit Modak.",
-    'I am a Developer.',
-    'Interested in AI,',
-    'and .NET Fullstack development.'];
-  for (i = 0; i < 4; i++) {
-    var element = '#messenger' + i;
-    messenger = new Messenger($(element), total[i]);
+  var headset = [
+    'Scroll to see next',
+    'My timeline',
+    'Skills learnt in 10th',
+    'Skills learnt in 12th',
+    'Skills learnt in B.Tech',
+    'Skills learnt in CTS Training',
+    'Contact Info'
+  ];
+  var element = '#messenger';
+  messenger = new Headmsg($(element), headset[0]);
+  function changehead(i) {
+    var element = '#messenger';
+    messenger = new Headmsg($(element), headset[i]);
   }
-  setInterval(function () {
-    for (i = 0; i < 4; i++) {
-      var element = '#messenger' + i;
-      messenger = new Messenger($(element), total[i]);
-    }
-  }, 8000);
