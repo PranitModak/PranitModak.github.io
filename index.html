@@ -2,184 +2,235 @@
 
 <head>
   <title>Pranit Modak</title>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
-  <link rel="shortcut icon" type="image/x-icon" href="image/titleIcon.png">
-
-  <link rel="stylesheet" href="css/style.css">
-
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <script src="src/sigma.core.js"></script>
-  <script src="src/conrad.js"></script>
-  <script src="src/utils/sigma.utils.js"></script>
-  <script src="src/utils/sigma.polyfills.js"></script>
-  <script src="src/sigma.settings.js"></script>
-  <script src="src/classes/sigma.classes.dispatcher.js"></script>
-  <script src="src/classes/sigma.classes.configurable.js"></script>
-  <script src="src/classes/sigma.classes.graph.js"></script>
-  <script src="src/classes/sigma.classes.camera.js"></script>
-  <script src="src/classes/sigma.classes.quad.js"></script>
-  <script src="src/classes/sigma.classes.edgequad.js"></script>
-  <script src="src/captors/sigma.captors.mouse.js"></script>
-  <script src="src/captors/sigma.captors.touch.js"></script>
-  <script src="src/renderers/sigma.renderers.canvas.js"></script>
-  <script src="src/renderers/sigma.renderers.webgl.js"></script>
-  <script src="src/renderers/sigma.renderers.svg.js"></script>
-  <script src="src/renderers/sigma.renderers.def.js"></script>
-  <script src="src/renderers/webgl/sigma.webgl.nodes.def.js"></script>
-  <script src="src/renderers/webgl/sigma.webgl.nodes.fast.js"></script>
-  <script src="src/renderers/webgl/sigma.webgl.edges.def.js"></script>
-  <script src="src/renderers/webgl/sigma.webgl.edges.fast.js"></script>
-  <script src="src/renderers/webgl/sigma.webgl.edges.arrow.js"></script>
-  <script src="src/renderers/canvas/sigma.canvas.labels.def.js"></script>
-  <script src="src/renderers/canvas/sigma.canvas.hovers.def.js"></script>
-  <script src="src/renderers/canvas/sigma.canvas.nodes.def.js"></script>
-  <script src="src/renderers/canvas/sigma.canvas.edges.def.js"></script>
-  <script src="src/renderers/canvas/sigma.canvas.edges.curve.js"></script>
-  <script src="src/renderers/canvas/sigma.canvas.edges.arrow.js"></script>
-  <script src="src/renderers/canvas/sigma.canvas.edges.curvedArrow.js"></script>
-  <script src="src/renderers/canvas/sigma.canvas.edgehovers.def.js"></script>
-  <script src="src/renderers/canvas/sigma.canvas.edgehovers.curve.js"></script>
-  <script src="src/renderers/canvas/sigma.canvas.edgehovers.arrow.js"></script>
-  <script src="src/renderers/canvas/sigma.canvas.edgehovers.curvedArrow.js"></script>
-  <script src="src/renderers/canvas/sigma.canvas.extremities.def.js"></script>
-  <script src="src/renderers/svg/sigma.svg.utils.js"></script>
-  <script src="src/renderers/svg/sigma.svg.nodes.def.js"></script>
-  <script src="src/renderers/svg/sigma.svg.edges.def.js"></script>
-  <script src="src/renderers/svg/sigma.svg.edges.curve.js"></script>
-  <script src="src/renderers/svg/sigma.svg.labels.def.js"></script>
-  <script src="src/renderers/svg/sigma.svg.hovers.def.js"></script>
-  <script src="src/middlewares/sigma.middlewares.rescale.js"></script>
-  <script src="src/middlewares/sigma.middlewares.copy.js"></script>
-  <script src="src/misc/sigma.misc.animation.js"></script>
-  <script src="src/misc/sigma.misc.bindEvents.js"></script>
-  <script src="src/misc/sigma.misc.bindDOMEvents.js"></script>
-  <script src="src/misc/sigma.misc.drawHovers.js"></script>
-  <!-- END SIGMA IMPORTS -->
-  <script src="plugins/sigma.parsers.gexf/gexf-parser.js"></script>
-  <script src="plugins/sigma.parsers.gexf/sigma.parsers.gexf.js"></script>
-  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css" rel="stylesheet" />
   <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'>
-  <link href='https://fonts.googleapis.com/css?family=Audiowide|Iceland|Monoton|Pacifico|Press+Start+2P|Vampiro+One'
-    rel='stylesheet' type='text/css'>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css'>
-  <script src="js/exampleUtil.js"></script>
-  <script src="js/graph.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
 
 </head>
 
-<body class="grad">
-  <div id="intro" style="height : 100%; width : 100%">
-    <div id="particles-js"></div>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="js/intro-back.js"></script>
-    <div class="pic"><img src="image/MyPic.png" width="400" height="700"></div>
-    <div id="messenger0"></div>
-    <div id="messenger1"></div>
-    <div id="messenger2"></div>
-    <div id="messenger3"></div>
+<body>
+  <div class="heading">
+    <div id="messenger"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
-    <script src="js/intro-render.js"></script>
+    <script src="js/head-render.js"></script>
   </div>
-  <div class="grad" style="height:1900px;padding : 200px 0px 100px 0px;">
-    <div class="container well infodiv">
-      <div class="picinfo">
-        Picture Showcase
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div id="intro" class="swiper-slide">
+        <img src="assets/Coder.gif">
+        <div style="height:250px; width:200px">
+          <div id="messenger0"></div>
+          <div id="messenger1"></div>
+          <div id="messenger2"></div>
+          <div id="messenger3"></div>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+          <script src="js/intro-render.js"></script>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+        <script src="js/intro-render.js"></script>
       </div>
-    </div>
-    <div id="picimage">
-      <ul class="m">
-        <li class="m1 li" tabindex="1"><img src="image/Deepracer.jpg" alt="" /></li>
-        <li class="m2 li" tabindex="2"><img src="image/Zyzz.jpg" alt="" /></li>
-        <li class="m3 li" tabindex="3"><img src="image/chipCircuit.png" alt="" /></li>
-        <li class="m4 li" tabindex="4"><img src="image/IEM.jpg" alt="" /></li>
-        <li class="m5 li" tabindex="5"><img src="image/3DPrinter.jpg" alt="" /></li>
-        <li class="m6 li" tabindex="6"><img src="image/ChatBot.png" alt="" /></li>
-        <li class="cube-wrap">
-            <div class="cube">
-                <div class="front"><img src="image/Deepracer.jpg"  alt="" /></div>
-                <div class="right"><img src="image/Zyzz.jpg" alt="" /></div>
-                <div class="top"><img src="image/chipCircuit.png" alt="" /></div>
-                <div class="left"><img src="image/IEM.jpg" alt="" /></div>
-                <div class="bottom"><img src="image/3DPrinter.jpg" alt="" /></div>
-                <div class="back"><img src="image/ChatBot.png" alt="" /></div>
-            </div>
-        </li>
-    </ul>
-    </div>
-    
-    <div id="headcont">
+      <div id="Timeline" class="swiper-slide">
+          <svg viewBox="0 0 1100 300">
 
-      <p><a>
-          Click on the nodes to view my Skills
-        </a></p>
-
-    </div>
-
-    <div class="wrapper">
-      <nav class="tabs">
-        <div class="selector"></div>
-        <a id="Start" class="active timebtn"><i class="fab fa-superpowers"></i>Start</a>
-        <a id="10th" class="timebtn"><i class="fas fa fa-book"></i>10th</a>
-        <a id="12th" class="timebtn"><i class="fas fa-id-card-alt"></i>12th</a>
-        <a id="Tech" class="timebtn"><i class="fas fa-graduation-cap"></i>B.Tech</a>
-        <a id="CTS" class="timebtn"><i class="fas fa-laptop"></i>CTS</a>
-      </nav>
-    </div>
-
-    <div class="container well text-center" style="height: 420px; width: 620px; padding : 10px;">
-      <div id="mynetwork"></div>
-    </div>
-  </div>
-  <script src="js/draw-graph.js"></script>
-  <div id="location" class="grad1" style="height: 600px; overflow: hidden;">
-    <div class="contact well well-sm">
-      <img src="image/ContactPic.jpg" style="float:left;top:0%;">
-      <div class="container text-center" style="width:241px;height:140px; margin-left: 0%;">
-          <h2 class="mb-30" style="font-size:40px;  font-family: 'Times New Roman', Times, serif;">Contact Details
+              <!-- Symbol with text -->
+              <symbol id="s-text">
+                <text id="txts1" text-anchor="middle"
+                      x="50%"
+                      y="25%"
+                      dy=".35em"
+                      class="text--line type"
+                      >
+                  Text
+                </text>
+                <text id="txts2" text-anchor="middle"
+                      x="50%"
+                      y="50%"
+                      dy=".35em"
+                      class="text--line type"
+                      >
+                  Text
+                </text>
+                <text id="txts3" text-anchor="middle"
+                      x="50%"
+                      y="75%"
+                      dy=".35em"
+                      class="text--line type"
+                      >
+                  Text
+                </text>    
+              </symbol>
+            
+              <!-- Clippath  with text -->
+              <clippath id="cp-text">
+                <text id="txtcl1" text-anchor="middle"
+                      x="50%"
+                      y="25%"
+                      dy=".35em"
+                      class="text--line type"
+                      >
+                  Text
+                </text>
+                <text id="txtcl2" text-anchor="middle"
+                      x="50%"
+                      y="50%"
+                      dy=".35em"
+                      class="text--line type"
+                      >
+                  Text
+                </text>
+                <text id="txtcl3" text-anchor="middle"
+                      x="50%"
+                      y="75%"
+                      dy=".35em"
+                      class="text--line type"
+                      >
+                  Text
+                </text>
+              </clippath>
+            
+              <!-- Group for shadow -->
+              <g clip-path="url(#cp-text)" class="shadow">
+                <rect
+                      width="100%"
+                      height="100%"         
+                      class="anim-shape anim-shape--shadow"
+                      ></rect>
+              </g>
+            
+              <!-- Group with clippath for text-->
+              <g clip-path="url(#cp-text)" class="colortext">
+                <!-- Animated shapes inside text -->
+                <rect
+                      width="100%"
+                      height="100%"         
+                      class="anim-shape"
+                      ></rect>
+                <rect
+                      width="80%"
+                      height="100%"         
+                      class="anim-shape"
+                      ></rect>
+                <rect
+                      width="60%"
+                      height="100%"         
+                      class="anim-shape"
+                      ></rect>
+                <rect
+                      width="40%"
+                      height="100%"         
+                      class="anim-shape"
+                      ></rect>
+                <rect
+                      width="20%"
+                      height="100%"         
+                      class="anim-shape"
+                      ></rect>
+              </g>
+            
+              <!-- Transparent copy of text to keep
+                     patterned text selectable -->
+              <use xlink:href="#s-text"
+                   class="text--transparent"></use>
+            
+            </svg>
+      </div>
+      <div id="10" class="swiper-slide">
+        <div class="container-general">
+          <div class="gallery-wrap wrap-effect-1">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+          </div>
+        </div>
+      </div>
+      <div id="12" class="swiper-slide">
+        <div class="container-general">
+          <div class="gallery-wrap wrap-effect-2">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+          </div>
+        </div>
+      </div>
+      <div id="btech" class="swiper-slide">
+        <div class="container-general">
+          <div class="gallery-wrap wrap-effect-3">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+          </div>
+        </div>
+      </div>
+      <div id="cts" class="swiper-slide">
+        <div class="container-general">
+          <div class="gallery-wrap wrap-effect-4">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+          </div>
+        </div>
+      </div>
+      <div id="contactinfo" class="swiper-slide">
+        <div class="contact well well-sm">
+          <img src="assets/ContactPic.jpg" style="float:left;top:0%;">
+          <div class="container contadd" style="width:241px;height:140px; margin-left: 0%;">
+            <h2 class="mb-30" style="font-size:40px;  font-family: 'Times New Roman', Times, serif;">Contact Details
             </h2>
-      </div>
-      <span><i class="fas fa-home"></i> BE-114, Rabindra Pally, Kestopur</span>
-      <span> Kolkata, West Bengal - 700101</span><br /><br />
-      <span><i class="fas fa-industry"></i> Cognizant Academy, <br /> No.148,OMR,ASV Suntech Park,
-        <br /> Thoraipakkam, Chennai, Tamil Nadu 600096</span><br /><br />
-      <span><i class="fas fa-phone"></i> +91 8420840257</span><br /><br />
-      <span><i class="far fa-envelope"></i> pranitmodak@cognizant.com</span>
+          </div>
+          <span><i class="fas fa-home"></i> BE-114, Rabindra Pally, Kestopur</span>
+          <span> Kolkata, West Bengal - 700101</span><br /><br />
+          <span><i class="fas fa-industry"></i> Cognizant Academy, <br /> No.148,OMR,ASV Suntech Park,
+            <br /> Thoraipakkam, Chennai, Tamil Nadu 600096</span><br /><br />
+          <span><i class="fas fa-phone"></i> +91 8420840257</span><br /><br />
+          <span><i class="far fa-envelope"></i> pranitmodak@cognizant.com</span>
+        </div>
+        <div id="social">
+          <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 300px;width: 300px">
+            <iframe src="https://maps.google.com/maps?q=asv%20suntech&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+          <div class="container socbox">
+            <div class="button">Connect</div>
+            <div class="social linked"><a href="https://in.linkedin.com/in/pranit-modak" target="_blank"><i
+                  class="fab fa-linkedin"></i></a></div>
+            <div class="social instagram"><a href="https://www.instagram.com/pranit_lucifer/" target="_blank"><i
+                  class="fab fa-instagram"></i></a></div>
+            <div class=" social devian"><a href="https://www.deviantart.com/pranitakalucifer" target="_blank"><i
+                  class="fab fa-deviantart"></i></a></div>
+            <div class="social reddit"><a href="https://www.reddit.com/user/pranitrock/" target="_blank"><i
+                  class="fab fa-reddit"></i></a></div>
+          </div>
 
-    </div>
-    <div id="video_overlays">
-      <img src="TV.gif" id="TV">
-    </div>
-    <div id="video">
-      <video id="video-content" preload="auto" width="100%" height="100%"
-        src="https://pranitmodak.github.io/Locate.mp4"></video>
-    </div>
-    <div id="social">
-      <div class="container socbox">
-        <div class="button">Connect</div>
-        <div class="social linked"><a href="https://in.linkedin.com/in/pranit-modak" target="_blank"><i class="fab fa-linkedin"></i></a></div>
-        <div class="social instagram"><a href="https://www.instagram.com/pranit_lucifer/" target="_blank"><i class="fab fa-instagram"></i></a></div>
-        <div class=" social devian"><a href="https://www.deviantart.com/pranitakalucifer" target="_blank"><i class="fab fa-deviantart"></i></a></div>
-        <div class="social reddit"><a href="https://www.reddit.com/user/pranitrock/" target="_blank"><i class="fab fa-reddit"></i></a></div>
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+              <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                  result="goo" />
+                <feBlend in="SourceGraphic" in2="goo" />
+              </filter>
+            </defs>
+          </svg>
+        </div>
       </div>
-      
-      <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-        <defs>
-          <filter id="goo">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
-            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-            <feBlend in="SourceGraphic" in2="goo" />
-          </filter>
-        </defs>
-      </svg>
     </div>
   </div>
+  <script src="js/mainswiper.js"></script>
 </body>
 
 </html>
