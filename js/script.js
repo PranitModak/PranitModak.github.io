@@ -55,7 +55,7 @@ function txtchange(txt1,txt2,txt3) {
 }
 function txttime() {
   txtchange("2012","10th from St. Stephen's School","Scored 91.5% in ICSE");
-  setTimeout(function(){txtchange("2014","12th from St. Stephen's School","Scored 92% in ISC");},5890);
-  setTimeout(function(){txtchange("2018","B.Tech from Techno India College of Technology","Scored 8.25 DGPA");},12600);
-  setTimeout(function(){txtchange("Now","Job at Cognizant (Programmer Analyst Trainee)","in Artificial Intelligence"); setTimeout(function(){txttime()},5500)},18800);
+  setTimeout(function(){txtchange("2014","12th from St. Stephen's School","Scored 92% in ISC");},3000);
+  setTimeout(function(){txtchange("2018","B.Tech from Techno India College of Technology","Scored 8.25 DGPA");},6000);
+  setTimeout(function(){txtchange("Now","Job at Cognizant (Programmer Analyst Trainee)","in Artificial Intelligence"); setTimeout(function(){txttime()},3000)},9000);
 }
