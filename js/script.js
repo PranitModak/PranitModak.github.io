@@ -15,7 +15,7 @@ $(document).ready(function () {
       txtchange("2012","10th from St. Stephen's School","Scored 91.5% in ICSE");
       setTimeout(function(){txtchange("2014","12th from St. Stephen's School","Scored 92% in ISC");},4000);
       setTimeout(function(){txtchange("2018","B.Tech from Techno India College of Technology.","Scored 8.25 DGPA");},8000);
-      setTimeout(function(){txtchange("Now","Job at Cognizant (Programmer Analyst Trainee)","in Artificial Intelligence");setTimeout(function(){txttime()},5500)},12000);
+      setTimeout(function(){txtchange("Now","Job at Cognizant (Programmer Analyst Trainee)","in Artificial Intelligence");setTimeout(function(){txttime()},4000)},12000);
     }
     if($(".swiper-slide-active").attr("id")=="10") {
       changehead(2)
@@ -57,5 +57,5 @@ function txttime() {
   txtchange("2012","10th from St. Stephen's School","Scored 91.5% in ICSE");
   setTimeout(function(){txtchange("2014","12th from St. Stephen's School","Scored 92% in ISC");},4000);
   setTimeout(function(){txtchange("2018","B.Tech from Techno India College of Technology","Scored 8.25 DGPA");},8000);
-  setTimeout(function(){txtchange("Now","Job at Cognizant (Programmer Analyst Trainee)","in Artificial Intelligence"); setTimeout(function(){txttime()},5500)},12000);
+  setTimeout(function(){txtchange("Now","Job at Cognizant (Programmer Analyst Trainee)","in Artificial Intelligence"); setTimeout(function(){txttime()},4000)},12000);
 }
