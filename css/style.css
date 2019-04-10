@@ -178,7 +178,7 @@ body {
   background-color: #4dd0e1;
 }
 .wrap-effect-5 .item:last-of-type {
-  background-image: url('../assets/IEM.jpg');
+  background-image: url('../assets/IEM.png');
   background-color: #9ccc65;
 }
 .inspire {
@@ -291,7 +291,8 @@ body {
   width: 80% !important;
   height: 35% !important;
   background-color: rgba(0,0,0,0);
-  margin-top: -10%
+  margin-top: -10%;
+  margin-left: 10%;
 }
 
 .contact{
@@ -313,7 +314,7 @@ body {
 }
 
 #map-container-google-1 {
-  margin-top: 10%;
+  margin-top: 40%;
 }
 .map-container iframe {
   left: 0;
