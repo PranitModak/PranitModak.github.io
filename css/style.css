@@ -322,80 +322,6 @@ body {
   width: 100%;
 }
 
-/* Main styles */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
-
-.text--transparent {
-  fill: transparent;
-}
-
-.anim-shape {
-  -webkit-transform-origin: 0x 150px;
-  -ms-transform-origin: 0x 150px;
-  transform-origin: 0x 150px;
-  -webkit-transform: scale(0, 1) translate(0, 0);
-  -ms-transform: scale(0, 1) translate(0, 0);
-  transform: scale(0, 1) translate(0, 0);
-  -webkit-animation: moving-panel 3s infinite alternate;
-  animation: moving-panel 3s infinite alternate;
-}
-
-.colortext .anim-shape:nth-child(1) {
-  fill: #0E1826;
-}
-
-.colortext .anim-shape:nth-child(2) {
-  fill: #166973;
-}
-
-.colortext .anim-shape:nth-child(3) {
-  fill: #65BFA6;
-}
-
-.colortext .anim-shape:nth-child(4) {
-  fill: #F2CD5C;
-}
-
-.colortext .anim-shape:nth-child(5) {
-  fill: #F26444;
-}
-
-.shadow {
-  -webkit-transform: translate(10px, 10px);
-  -ms-transform: translate(10px, 10px);
-  transform: translate(3px, 3px);
-}
-
-.anim-shape--shadow {
-  fill: #000;
-  fill-opacity: .2;
-}
-
-@-webkit-keyframes moving-panel {
-  100% {
-    -webkit-transform: scale(1, 1) translate(20px, 0);
-    transform: scale(1, 1) translate(20px, 0);
-  }
-}
-
-@keyframes moving-panel {
-  100% {
-    -webkit-transform: scale(1, 1) translate(20px, 0);
-    transform: scale(1, 1) translate(20px, 0);
-  }
-}
-
-/* Other stuff */
-
-svg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  font-size: 50px;
-  font-weight: bolder;
-  word-wrap: break-word;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-}
 
 @import url(https://fonts.googleapis.com/css?family=Lato);
 
@@ -636,4 +562,19 @@ svg {
 
 .blobactive {
   background-color: #5c6bc0 !important;
+}
+
+.ml4 {
+  position: absolute;
+  font-weight: 900;
+  font-size: 20px;
+  margin-top: -5%;
+  margin-left: -15%;
+}
+.ml4 .letters {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0; 
+  width: 300px;
 }
