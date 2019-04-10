@@ -139,6 +139,16 @@
             
             </svg>
       </div>
+      <div id="Showcase" class="swiper-slide">
+          <div class="container-general">
+            <div class="gallery-wrap wrap-effect-5">
+              <div class="item"></div>
+              <div class="item"></div>
+              <div class="item"></div>
+              <div class="item"></div>
+            </div>
+          </div>
+        </div>
       <div id="10" class="swiper-slide">
         <div class="container-general">
           <div class="gallery-wrap wrap-effect-1">
@@ -236,14 +246,14 @@
 
       <div class='wrap'>
         <input type='checkbox' id='checking' style='display:none;' />
-        <button class='blob'>&#x2605;</button>
-        <button class='blob'>&#x2709;</button>
-        <button class='blob'>&#x2699;</button>
-        <button class='blob'>&#x2764;</button>
-        <button class='blob'>&#x270C;</button>
-        <button class='blob'>&#x270E;</button>
-        <button class='blob'>&#x266B;</button>
-        <button class='blob'>&#x2706;</button>
+        <button id="Home" title="Home" onclick="sclmove(-1)" class='blob blobactive'><i class="fas fa-home"></i></button>
+        <button id="10th" title="Skills in 10th" onclick="sclmove(2)" class='blob'><i class="fas fa-code-branch"></i></button>
+        <button id="Projects" title="Projects" onclick="sclmove(1)" class='blob'><i class="fas fa-microchip"></i></button>
+        <button id="Contact" title="Contact" onclick="sclmove(6)" class='blob'><i class="fas fa-phone"></i></button>
+        <button id="Timer" title="Timeline" onclick="sclmove(0)" class='blob'><i class="fas fa-heartbeat"></i></button>
+        <button id="BTech" title="Skills in B.Tech" onclick="sclmove(4)" class='blob'><i class="fas fa-terminal"></i></button>
+        <button id="12th" title="Skills in 12th" onclick="sclmove(3)" class='blob'><i class="fas fa-file-code"></i></button>
+        <button id="CTS" title="Skills in CTS" onclick="sclmove(5)" class='blob'><i class="fas fa-laptop-code"></i></button>
         <label class='blob' for='checking'>
           <span class='bar'></span>      
           <span class='bar'></span>
@@ -253,15 +263,7 @@
     
     </main>
     
-    <svg>
-      <defs>
-        <filter id="filt">
-          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="filt" />
-          <feBlend in2="filt" in="SourceGraphic" result="mix" />
-        </filter>
-      </defs>
-    </svg>
+    
 </body>
 
 </html>

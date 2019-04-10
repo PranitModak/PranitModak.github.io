@@ -15,7 +15,7 @@ body {
   height: 5%;
   margin: 10px;
   padding: 10px;
-  margin-left: 40%;
+  margin-left: 43%;
 }
 .swiper-container {
   width: 90%;
@@ -54,7 +54,7 @@ body {
 .wrap-effect-1 .item:hover {
   transform: translate3d(0, 0, 100px);
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-  filter: saturate(2) contrast(105%);
+  filter: saturate(2) contrast(100%);
 }
 .wrap-effect-1 .item:first-of-type {
   background-image: url('../assets/css.png');
@@ -159,6 +159,26 @@ body {
 }
 .wrap-effect-4 .item:last-of-type {
   background-image: url('../assets/Node.png');
+  background-color: #9ccc65;
+}
+.wrap-effect-5 .item:hover {
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  filter: saturate(2) contrast(120%);
+}
+.wrap-effect-5 .item:first-of-type {
+  background-image: url('../assets/3DPrinter.jpg');
+  background-color: #ffe082;
+}
+.wrap-effect-5 .item:nth-of-type(2) {
+  background-image: url('../assets/ChatBot.png');
+  background-color: whitesmoke;
+}
+.wrap-effect-5 .item:nth-of-type(3) {
+  background-image: url('../assets/chipCircuit.png');
+  background-color: #4dd0e1;
+}
+.wrap-effect-5 .item:last-of-type {
+  background-image: url('../assets/IEM.jpg');
   background-color: #9ccc65;
 }
 .inspire {
@@ -612,4 +632,8 @@ svg {
   width: 25% !important;
   height: 35% !important;
   pointer-events: painted;
+}
+
+.blobactive {
+  background-color: #5c6bc0 !important;
 }

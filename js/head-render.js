@@ -86,15 +86,44 @@ var Headmsg = function (el, text) {
   var headset = [
     'Scroll to see next',
     'My timeline',
+    'Project & Achievement Showcase',
     'Skills learnt in 10th',
     'Skills learnt in 12th',
     'Skills learnt in B.Tech',
     'Skills learnt in CTS Training',
-    'Contact Info'
+    'Contact Info',
   ];
   var element = '#messenger';
   messenger = new Headmsg($(element), headset[0]);
   function changehead(i) {
     var element = '#messenger';
     messenger = new Headmsg($(element), headset[i]);
+    $(".blob").removeClass("blobactive");
+    switch(i)
+    {
+        case 0 :
+        $("#Home").addClass("blobactive");
+        break;
+        case 1 :
+        $("#Timer").addClass("blobactive");
+        break;
+        case 2 :
+        $("#Projects").addClass("blobactive");
+        break;
+        case 3 :
+        $("#10th").addClass("blobactive");
+        break;
+        case 4 :
+        $("#12th").addClass("blobactive");
+        break;
+        case 5 :
+        $("#BTech").addClass("blobactive");
+        break;
+        case 6 :
+        $("#CTS").addClass("blobactive");
+        break;
+        case 7 :
+        $("#Contact").addClass("blobactive");
+        break;
+    }
   }
