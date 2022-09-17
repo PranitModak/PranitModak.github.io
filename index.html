@@ -1,175 +1,20 @@
+<meta charset="utf8" />
 <html>
+  <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+  <link
+    href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css"
+    rel="stylesheet"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/handsontable@12.1/dist/handsontable.full.min.js"></script>
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/handsontable@12.1/dist/handsontable.full.min.css"
+  />
+  <script src="/dist/worker.sql-wasm.js"></script>
 
-<head>
-  <title>Pranit Modak</title>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css" rel="stylesheet" />
-  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js"></script>
-
-</head>
-
-<body>
-    
-  <div class="heading">
-    <div id="messenger"></div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
-    <script src="js/head-render.js"></script>
-  </div>
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div id="intro" class="swiper-slide">
-        <img src="assets/Coder.gif">
-        <div style="height:250px; width:200px">
-          <div id="messenger0"></div>
-          <div id="messenger1"></div>
-          <div id="messenger2"></div>
-          <div id="messenger3"></div>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
-          <script src="js/intro-render.js"></script>
-        </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
-        <script src="js/intro-render.js"></script>
-      </div>
-      <div id="Timeline" class="swiper-slide">
-          <h1 class="ml4">
-              <span class="letters letters-1">2012<br>10th from St. Stephen's School<br>Scored 91.5% in ICSE</span>
-              <span class="letters letters-2">2014<br>12th from St. Stephen's School<br>Scored 92% in ISC</span>
-              <span class="letters letters-3">2018<br>B.Tech from Techno India College of Technology.<br>Scored 8.25 DGPA</span>
-              <span class="letters letters-4">Now<br>Job at Cognizant (Programmer Analyst Trainee)<br>in Artificial Intelligence</span>
-            </h1>
-            
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-            <script src="js/time.js"></script>
-      </div>
-      <div id="Showcase" class="swiper-slide">
-          <div class="container-general">
-            <div class="gallery-wrap wrap-effect-5">
-              <div title="3D Printer" class="item"></div>
-              <div title="TensorFlow Chatbot" class="item"></div>
-              <div title="Gate IC Simulation Software" class="item"></div>
-              <div title="Swarm Robotics Research Award" class="item"></div>
-            </div>
-          </div>
-        </div>
-      <div id="10" class="swiper-slide">
-        <div class="container-general">
-          <div class="gallery-wrap wrap-effect-1">
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-          </div>
-        </div>
-      </div>
-      <div id="12" class="swiper-slide">
-        <div class="container-general">
-          <div class="gallery-wrap wrap-effect-2">
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-          </div>
-        </div>
-      </div>
-      <div id="btech" class="swiper-slide">
-        <div class="container-general">
-          <div class="gallery-wrap wrap-effect-3">
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-          </div>
-        </div>
-      </div>
-      <div id="cts" class="swiper-slide">
-        <div class="container-general">
-          <div class="gallery-wrap wrap-effect-4">
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-          </div>
-        </div>
-      </div>
-      <div id="contactinfo" class="swiper-slide">
-        <div class="contact well well-sm">
-          <img src="assets/ContactPic.jpg" style="float:left;top:0%;">
-          <div class="container contadd" style="width:241px;height:140px; margin-left: 0%;">
-            <h2 class="mb-30" style="font-size:40px;  font-family: 'Times New Roman', Times, serif;">Contact Details
-            </h2>
-          </div>
-          <span><i class="fas fa-home"></i> BE-114, Rabindra Pally, Kestopur</span>
-          <span> Kolkata, West Bengal - 700101</span><br /><br />
-          <span><i class="fas fa-industry"></i> Cognizant Academy, <br /> No.148,OMR,ASV Suntech Park,
-            <br /> Thoraipakkam, Chennai, Tamil Nadu 600096</span><br /><br />
-          <span><i class="fas fa-phone"></i> +91 8420840257</span><br /><br />
-          <span><i class="far fa-envelope"></i> pranitmodak@cognizant.com</span>
-        </div>
-        <div id="social">
-          <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 300px;width: 300px">
-            <iframe src="https://maps.google.com/maps?q=asv%20suntech&t=&z=13&ie=UTF8&iwloc=&output=embed"
-              frameborder="0" style="border:0" allowfullscreen></iframe>
-          </div>
-          <div class="container socbox">
-            <div class="button">Connect</div>
-            <div class="social linked"><a href="https://in.linkedin.com/in/pranit-modak" target="_blank"><i
-                  class="fab fa-linkedin"></i></a></div>
-            <div class="social instagram"><a href="https://www.instagram.com/pranit_lucifer/" target="_blank"><i
-                  class="fab fa-instagram"></i></a></div>
-            <div class=" social devian"><a href="https://www.deviantart.com/pranitakalucifer" target="_blank"><i
-                  class="fab fa-deviantart"></i></a></div>
-            <div class="social reddit"><a href="https://www.reddit.com/user/pranitrock/" target="_blank"><i
-                  class="fab fa-reddit"></i></a></div>
-          </div>
-
-          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-            <defs>
-              <filter id="goo">
-                <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
-                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
-                  result="goo" />
-                <feBlend in="SourceGraphic" in2="goo" />
-              </filter>
-            </defs>
-          </svg>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script src="js/mainswiper.js"></script>
-  <main class='ham container'>
-
-      <div class='wrap'>
-        <input type='checkbox' id='checking' style='display:none;' />
-        <button id="Home" title="Home" onclick="sclmove(-1)" class='blob blobactive'><img src="assets/home.png"></button>
-        <button id="10th" title="Skills in 10th" onclick="sclmove(2)" class='blob'><img src="assets/10th.png"></button>
-        <button id="Projects" title="Projects" onclick="sclmove(1)" class='blob'><img src="assets/project.png"></button>
-        <button id="Contact" title="Contact" onclick="sclmove(6)" class='blob'><img src="assets/connect.png"></button>
-        <button id="Timer" title="Timeline" onclick="sclmove(0)" class='blob'><img src="assets/timeline.png"></button>
-        <button id="BTech" title="Skills in B.Tech" onclick="sclmove(4)" class='blob'><img src="assets/btech.png"></button>
-        <button id="12th" title="Skills in 12th" onclick="sclmove(3)" class='blob'><img src="assets/12th.png"></button>
-        <button id="CTS" title="Skills in CTS" onclick="sclmove(5)" class='blob'><img src="assets/cognizant.png"></button>
-        <label class='blob' for='checking'>
-          <span class='bar'></span>      
-          <span class='bar'></span>
-          <span class='bar'></span>
-    </label>
-      </div>
-    
-    </main>
-    
-    
-</body>
-
+  <body>
+    <div id="wrapper"></div>
+    <script src="main.js"></script>
+  </body>
 </html>
