@@ -12,21 +12,25 @@ initSqlJs(config).then(async function (SQL) {
   const fetched = await fetch("Cards.db");
   const buf = await fetched.arrayBuffer();
   const db = new SQL.Database(new Uint8Array(buf));
-  const contents = db.exec("SELECT * FROM Cards");
+  const contents = db.exec("SELECT `Set`,Image,Name,Civilization,'Card Type','Mana Cost',Race,'English Text',Power FROM Cards");
   col = contents[0].columns
   rows = contents[0].values
   rows.forEach(row => {
     img = document.createElement('img');
-    img.src = 'data:image/jpg;base64, '+(row[1]).reduce((data, byte)=> {
+    try {
+      img.src = 'data:image/jpg;base64, '+(row[1]).reduce((data, byte)=> {
         return data + String.fromCharCode(byte);
         }, '')
+      
+    } catch (error) {
+      console.log(error)
+    }
     img.width = '100';
     img.height = '140';
     row[1]=img
   });
 const data = [['', '', '', '', '', '', '','','']];
 data.push(...rows);
-console.log(data)
 
 new gridjs.Grid({
     columns: col,
