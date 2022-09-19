@@ -23,7 +23,7 @@ initSqlJs(config).then(async function (SQL) {
         }, '')
       
     } catch (error) {
-      console.log(error)
+      img.src = 'data:image/jpg;base64, '+ row[1];
     }
     img.width = '100';
     img.height = '140';
