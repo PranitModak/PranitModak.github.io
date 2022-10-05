@@ -1,19 +1,17 @@
 <meta charset="utf8" />
 <html>
   <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
-  <link
-    href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css"
-    rel="stylesheet"
-  />
-  <script src="https://cdn.jsdelivr.net/npm/handsontable@12.1/dist/handsontable.full.min.js"></script>
-  <link
-    type="text/css"
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/handsontable@12.1/dist/handsontable.full.min.css"
-  />
+  <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
   <script src="/dist/worker.sql-wasm.js"></script>
 
   <body>
+    <div id="pg_bar">
+      <h1>Loading All Cards</h1>
+      <div class="w3-light-grey w3-round">
+        <div id="myBar" class="w3-container w3-round w3-blue" style="height: 24px; width: 0%"></div>
+      </div>
+    </div>
     <div id="wrapper"></div>
     <script src="main.js"></script>
   </body>
