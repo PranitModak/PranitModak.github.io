@@ -3,9 +3,20 @@ config = {
 };
 
 const columns = ["Set", "Image", "Name", "Civilization", "Card Type", "Mana Cost", "Race", "English Text", "Power"];
-
+let rows = [];
+const grid = new gridjs.Grid({
+  columns: columns,
+  data: rows,
+  pagination: {
+    limit: 10,
+  },
+  search: {
+    enabled: true,
+  },
+  sort: true,
+  mouseOverColor: "#FFC1C1",
+}).render(document.getElementById("wrapper"));
 initSqlJs(config).then(async function (SQL) {
-  let rows = [];
   var elem = document.getElementById("myBar");
   for (let index = 1; index < 40; index++) {
     let s_db = index + "";
@@ -14,21 +25,12 @@ initSqlJs(config).then(async function (SQL) {
     let set_rows = await get_dbdata("DB/DM-" + s_db + ".db",SQL);
     rows.push(...set_rows)
     elem.style.width = index/39*100 + '%';
+    grid.updateConfig({
+      data: rows
+    }).forceRender();
   }
   var elem = document.getElementById("pg_bar");
   elem.style.display = "None"
-  new gridjs.Grid({
-    columns: columns,
-    data: rows,
-    pagination: {
-      limit: 10,
-    },
-    search: {
-      enabled: true,
-    },
-    sort: true,
-    mouseOverColor: "#FFC1C1",
-  }).render(document.getElementById("wrapper"));
 });
 
 async function get_dbdata(dbname,SQL) {
