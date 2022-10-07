@@ -19,36 +19,98 @@ const procCard = (params) => {
 const columns = ["Set", "Image", "Name", "Civilization", "Card Type", "Mana Cost", "Race", "English Text", "Power"];
 let rows = [];
 const columnDefs = [
-  { field: columns[0], width: 140, suppressSizeToFit: true },
+  {
+    field: columns[0],
+    width: 140,
+    suppressSizeToFit: true,
+    filter: "agTextColumnFilter",
+    filterParams: {
+      buttons: ["apply", "reset"],
+      closeOnApply: true,
+    },
+  },
   { field: columns[1], cellRenderer: procCard, width: 140, suppressSizeToFit: true },
-  { field: columns[2], width: 160, suppressSizeToFit: true },
-  { field: columns[3], width: 110, suppressSizeToFit: true },
-  { field: columns[4], width: 110, suppressSizeToFit: true },
+  {
+    field: columns[2],
+    width: 160,
+    suppressSizeToFit: true,
+    filter: "agTextColumnFilter",
+    filterParams: {
+      buttons: ["apply", "reset"],
+      closeOnApply: true,
+    },
+  },
+  {
+    field: columns[3],
+    width: 110,
+    suppressSizeToFit: true,
+    filter: "agTextColumnFilter",
+    filterParams: {
+      buttons: ["apply", "reset"],
+      closeOnApply: true,
+    },
+  },
+  {
+    field: columns[4],
+    width: 110,
+    suppressSizeToFit: true,
+    filter: "agTextColumnFilter",
+    filterParams: {
+      buttons: ["apply", "reset"],
+      closeOnApply: true,
+    },
+  },
   { field: columns[5], width: 110, suppressSizeToFit: true },
-  { field: columns[6], wrapText: true },
-  { field: columns[7], width: 320, suppressSizeToFit: true },
-  { field: columns[8], width: 110, suppressSizeToFit: true },
+  {
+    field: columns[6],
+    wrapText: true,
+    filter: "agNumberColumnFilter",
+    filterParams: {
+      buttons: ["apply", "reset"],
+      closeOnApply: true,
+    },
+  },
+  {
+    field: columns[7],
+    width: 320,
+    suppressSizeToFit: true,
+    filter: "agTextColumnFilter",
+    filterParams: {
+      buttons: ["apply", "reset"],
+      closeOnApply: true,
+    },
+  },
+  {
+    field: columns[8],
+    width: 110,
+    suppressSizeToFit: true,
+    filter: "agNumberColumnFilter",
+    filterParams: {
+      buttons: ["apply", "reset"],
+      closeOnApply: true,
+    },
+  },
 ];
+const gridDiv = document.querySelector("#myGrid");
+const gridOptions = {
+  defaultColDef: {
+    wrapText: true,
+    autoHeight: true,
+  },
+  columnDefs: columnDefs,
+  rowData: rows,
+  animateRows: true,
+  statusBar: {
+    statusPanels: [{ statusPanel: "agAggregationComponent", align: "right" }],
+  },
+  getRowId: (params) => {
+    return params.data.index;
+  },
+  pagination: true,
+  paginationPageSize: 10,
+};
+const cardGrid = new agGrid.Grid(gridDiv, gridOptions);
 initSqlJs(config).then(async function (SQL) {
-  const gridDiv = document.querySelector("#myGrid");
-  const gridOptions = {
-    defaultColDef : {
-      wrapText: true,
-      autoHeight: true
-    },
-    columnDefs: columnDefs,
-    rowData: rows,
-    animateRows: true,
-    statusBar: {
-      statusPanels: [{ statusPanel: "agAggregationComponent", align: "right" }],
-    },
-    getRowId: (params) => {
-      return params.data.index;
-    },
-    pagination: true,
-    paginationPageSize: 10,
-  };
-  const cardGrid = new agGrid.Grid(gridDiv, gridOptions);
   gridOptions.api.sizeColumnsToFit();
   var elem = document.getElementById("myBar");
   for (let index = 1; index < 40; index++) {
@@ -73,7 +135,7 @@ async function get_dbdata(dbname, SQL) {
   var buf = await fetched.arrayBuffer();
   var db = new SQL.Database(new Uint8Array(buf));
   var stmt = db.prepare('SELECT `index`,`Set`,Image,Name,Civilization,"Card Type","Mana Cost",Race,"English Text",Power FROM Cards');
-  stmt.getAsObject({ $start: 1, $end: 1 }); // {col1:1, col2:111}
+  stmt.getAsObject({ $start: 1, $end: 1 });
   stmt.bind({ $start: 1, $end: 2 });
   while (stmt.step()) {
     var row = stmt.getAsObject();
