@@ -60,11 +60,20 @@ const columnDefs = [
       closeOnApply: true,
     },
   },
-  { field: columns[5], width: 110, suppressSizeToFit: true },
+  {
+    field: columns[5],
+    width: 110,
+    suppressSizeToFit: true,
+    filter: "agTextColumnFilter",
+    filterParams: {
+      buttons: ["apply", "reset"],
+      closeOnApply: true,
+    },
+  },
   {
     field: columns[6],
     wrapText: true,
-    filter: "agNumberColumnFilter",
+    filter: "agTextColumnFilter",
     filterParams: {
       buttons: ["apply", "reset"],
       closeOnApply: true,
@@ -84,7 +93,7 @@ const columnDefs = [
     field: columns[8],
     width: 110,
     suppressSizeToFit: true,
-    filter: "agNumberColumnFilter",
+    filter: "agTextColumnFilter",
     filterParams: {
       buttons: ["apply", "reset"],
       closeOnApply: true,
