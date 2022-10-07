@@ -1,8 +1,7 @@
 <meta charset="utf8" />
 <html>
-  <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
-  <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.js"></script>
   <script src="/dist/worker.sql-wasm.js"></script>
 
   <body>
@@ -12,7 +11,7 @@
         <div id="myBar" class="w3-container w3-round w3-blue" style="height: 24px; width: 0%"></div>
       </div>
     </div>
-    <div id="wrapper"></div>
+    <div id="myGrid" style="height: 100%; width:100%;" class="ag-theme-alpine"></div>
     <script src="main.js"></script>
   </body>
 </html>
